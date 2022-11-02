@@ -73,3 +73,8 @@ Initial Meeting - 9/25/2022
 Attendees - all
 Report - discussed project, worked on first deliverable
 
+Deliverable 2 Meeting - 9/16/2022
+Attendees - all
+Report - Discussed deliverable 2, finalized functionality for the program.
+Will begin constructing the program.
+
