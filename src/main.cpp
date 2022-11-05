@@ -37,4 +37,6 @@ void header()
     cout << "||CSCE 3444.003\n";
     cout << "||DnD Combat Helper\n";
     cout << "...\n";
+    cout << "Commands:\n";
+    cout << "-roll\n";
 }

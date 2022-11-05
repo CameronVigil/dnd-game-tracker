@@ -7,45 +7,48 @@
 #include <iostream>     // std::cout
 #include <algorithm>    // std::for_each
 #include <vector>       // std::vector
+#include <string>
 
 using namespace std;
 
 
-
 //function for each individual roll
 void rollDice(string token) {
-    cout << token;
+    int numOfRolls = 0;             //number of rolls for specific dice
+    int DiceRoll = 0;               //type of dice
+    int totalDiceRollSum = 0;       // sum of dice rolls
+    string currentToken = token;    //current token being parsed
 
-    // Traverse the string
-    for (int i = 0; i < token.length(); i++) {
-
-        // Print current character
-        cout << token[i] << " ";
+    cout << token << "\n";
+    //checks if there is number in front representing multiple dice rolls
+    if (isdigit(token.front())) {
+        int dPosition = token.find('d');            //finds 'd' character
+        string subS = token.substr(0, dPosition);   //substring for number of rolls
+        numOfRolls = stoi(subS);                    //sets the number of rolls
+        token.erase(0, dPosition + 1);              //remove up to and including 'd' character
     }
-    /*
-
-    int numOfRolls, int DiceRoll;
+    else {
+        numOfRolls = 1;     //assumed 1 roll
+        token.erase(0,1);   //remove 'd' character
+    }
     
-    //d4
-    int totalDiceRollSum = 0;
-    
+    //set token string to number of dice roll
+    DiceRoll = stoi(token); 
 
     for (int i = 0; i < numOfRolls; i++) {
-
-        int result = floor(rand() * DiceRoll) + 1;
-        
-        totalDiceRollSum = totalDiceRollSum + result;
+        int result = floor(rand() % DiceRoll) + 1;      //random number in range of dice number
+        totalDiceRollSum = totalDiceRollSum + result;   //total sum for dice
     }
 
-    */
-    //return totalDiceRollSum;
+    cout << "Total for the dice roll (" << currentToken << "):" << totalDiceRollSum << "\n";
+
 }
 
 
-
+//roll function
 void roll(vector <string> tokens) {
 
-    for_each(tokens.begin(), tokens.end(), rollDice);
+    for_each(tokens.begin(), tokens.end(), rollDice);   //calls function for each dice roll requested
 
 }
 
