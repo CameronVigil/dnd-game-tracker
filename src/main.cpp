@@ -9,8 +9,9 @@
 #include "database.h"       //SQL database
 #include "roll.h"           //roll dice
 #include "func.h"
-
+#include "scrape.h"
 using namespace std;
+
 void header();
 
 int main()

@@ -33,7 +33,15 @@ Directory Structure
 
 
 
+Install:
 
+git clone https://github.com/Microsoft/vcpkg.git
+cd ..
+.\vcpkg\bootstrap-vcpkg.bat
+.\vcpkg install curl
+.\vcpkg install gumbo
+
+.\vcpkg integrate install
 
 
 

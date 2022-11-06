@@ -1,9 +1,3 @@
-#include "token.h"
-
-
-#include "func.h"
-#include "database.h"
-#include "roll.h"
 #include <stdio.h>      
 #include <math.h>
 #include <cstdlib>
@@ -11,6 +5,14 @@
 #include <algorithm>    // std::for_each
 #include <vector>       // std::vector
 #include <sstream>
+#include <string>
+
+#include "token.h"
+#include "scrape.h"
+#include "func.h"
+#include "database.h"
+#include "roll.h"
+
 
 using namespace std;
 
@@ -30,7 +32,8 @@ void interpret(vector<string> tokens)
     }
     else if (tokens[0] == "add" && tokens[1] == "player")
     {
-
+        string url("https://www.dndbeyond.com/characters/44851421");
+        request(url); //test character sheet
     }
     else if (tokens[0] == "del" && tokens[1] == "player")
     {

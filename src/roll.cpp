@@ -1,6 +1,3 @@
-#include "roll.h"
-
-
 #include <stdio.h>      
 #include <math.h>
 #include <cstdlib>
@@ -9,15 +6,32 @@
 #include <vector>       // std::vector
 #include <string>
 
+#include "roll.h"
 using namespace std;
 
 
 //function for each individual roll
-void rollDice(string token) {
+int rollDice(string token) {
     int numOfRolls = 0;             //number of rolls for specific dice
     int DiceRoll = 0;               //type of dice
     int totalDiceRollSum = 0;       // sum of dice rolls
     string currentToken = token;    //current token being parsed
+
+    //if + or -
+    if (token.find('+')) {
+        int plusPosition = token.find('+');
+        string subFirst = token.substr(0, plusPosition);
+        totalDiceRollSum += rollDice(subFirst);
+        token.erase(0, plusPosition + 1);              //remove up to and including 'd' character
+        totalDiceRollSum -= stoi(token);
+    }else if (token.find('-')) {
+        int minusPosition = token.find('-');
+        string subFirst = token.substr(0, minusPosition);
+        totalDiceRollSum += rollDice(subFirst);
+        token.erase(0, minusPosition + 1);              //remove up to and including 'd' character
+        totalDiceRollSum -= stoi(token);
+    }
+
 
     cout << token << "\n";
     //checks if there is number in front representing multiple dice rolls
@@ -41,12 +55,15 @@ void rollDice(string token) {
     }
 
     cout << "Total for the dice roll (" << currentToken << "):" << totalDiceRollSum << "\n";
-
+    return totalDiceRollSum;
 }
 
 
 //roll function
 void roll(vector <string> tokens) {
+    for (string i : tokens)
+        std::cout << i << ' ';
+
 
     for_each(tokens.begin(), tokens.end(), rollDice);   //calls function for each dice roll requested
 
