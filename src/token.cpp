@@ -1,6 +1,6 @@
 #include "token.h"
 
-
+#include "webScrape.h"
 #include "func.h"
 #include "database.h"
 #include "roll.h"
@@ -30,7 +30,7 @@ void interpret(vector<string> tokens)
     }
     else if (tokens[0] == "add" && tokens[1] == "player")
     {
-
+        webScrape();
     }
     else if (tokens[0] == "del" && tokens[1] == "player")
     {
