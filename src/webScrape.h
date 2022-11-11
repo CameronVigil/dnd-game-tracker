@@ -13,5 +13,5 @@
 using namespace std;
 
 
-int webScrape();
+int webScrape(string importedURL);
 #endif WEBSCRAPE_H
