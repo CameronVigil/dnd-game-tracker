@@ -9,8 +9,7 @@
 #include "database.h"       //SQL database
 #include "roll.h"           //roll dice
 #include "func.h"
-#include "scrape.h"
-using namespace std;
+#include "webScrape.h"      //web scraper
 
 void header();
 
@@ -40,4 +39,5 @@ void header()
     cout << "...\n";
     cout << "Commands:\n";
     cout << "-roll\n";
+    cout << "-add player\n";
 }

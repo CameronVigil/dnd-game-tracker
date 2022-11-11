@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The World&#x27;s most intelligent Dungeons and Dragons Character Sheet." />
+        <meta name="keywords" content="combat,tracker,encounter,characters,monsters,random,party,xp,level,encounters,challenge,monster,character,rating,difficulty,determine,combat,players,numbers,threshold,build,building,challenge rating,tracker,digital,d&amp;d,dungeons,dragons" />
+    <title>D&amp;D Beyond Character Sheet - D&amp;D Beyond</title>
+
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N3KHV3K');</script>
+<!-- End Google Tag Manager -->
+<!-- Optimizely -->
+
+<script src="https://cdn.optimizely.com/js/21997020334.js"></script>
+
+<!-- End Optimizely -->
+
+
+<script>
+// Gamesight SDK Snippet
+(function(G,m,s,g,h,t){G.gsght=G.gsght||function(){
+(G.gsght.q=G.gsght.q||[]).push(arguments)},G.gsght.q=[],G.gsght.h=1*new Date();
+h=m.createElement(s),t=m.getElementsByTagName(s)[0];h.async=1;h.src=g;t.parentNode.insertBefore(h,t)
+})(window,document,'script','https://cdn.gsght.com/sdk.js');
+
+gsght("init", "GS-101147");
+gsght("set", "acm_enabled", true);
+
+
+        gsght("send");
+    </script>
+
+
+
+  <script
+    src="https://www.dndbeyond.com/cookie-consent-banner/index.js"
+    type=module
+    async></script>
+
+    <meta name="theme-color" content="#121212" />
+    <link rel="stylesheet" href="/app/css/main.css" />
+
+
+    <link rel="stylesheet" href="https://www.dndbeyond.com/content/skins/waterdeep/css/core-tooltip.css" />
+        <link rel="stylesheet" href="/app/css/landing_page.css">
+
+
+        <link rel="canonical" href="/characters" />
+
+
+    <link rel="shortcut icon"
+        href="https://www.dndbeyond.com/avatars/thumbnails/104/378/32/32/636511944060210307.png" />
+
+    <link rel="search" href="https://www.dndbeyond.com/opensearch.xml" type="application/opensearchdescription+xml"
+        title="D&amp;D Beyond - The World&#x27;s most intelligent Dungeons and Dragons Character Sheet." />
+
+    <meta property="og:title" content="D&amp;D Beyond Character Sheet" />
+    <meta property="og:site_name" content="D&amp;D Beyond" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/characters" />
+    <meta property="og:description" content="The World&#x27;s most intelligent Dungeons and Dragons Character Sheet." />
+    <meta property="og:image" content="/content/skins/waterdeep/images/og-images/og-monsters.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="D&amp;D Beyond" />
+    <meta name="twitter:title" content="D&amp;D Beyond Character Sheet" />
+    <meta name="twitter:description" content="The World&#x27;s most intelligent Dungeons and Dragons Character Sheet." />
+    <meta name="twitter:image" content="/content/skins/waterdeep/images/og-images/og-monsters.png" />
+</head>
+
+<body id="site" class="">
+    <div id="site-main">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3KHV3K"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div role="banner" class="header-wrapper">
+    <div name="site-bar"><div
+    id="site-bar"
+
+    data-config="{&quot;debug&quot;:false,&quot;environment&quot;:&quot;production&quot;,&quot;launchDarkylyClientId&quot;:&quot;5c63387e40bda9329a652b74&quot;,&quot;production&quot;:true,&quot;version&quot;:&quot;0.0.20&quot;,&quot;baseUrl&quot;:&quot;https://www.dndbeyond.com&quot;}"
+    data-environment="production"></div>
+<link href="https://media.dndbeyond.com/site-bar/css/_dndbeyond_site_bar.8c78bd78.css" rel="stylesheet" />
+<script src="https://media.dndbeyond.com/site-bar/_dndbeyond_site_bar.66f43ad137e97a92591e.bundle.js"></script>
+</div>
+    <div name="megamenu"><div
+    id="mega-menu-target"
+
+    data-config="{&quot;authEndpoint&quot;:&quot;https://auth-service.dndbeyond.com/v1/cobalt-token&quot;,&quot;branchName&quot;:&quot;&quot;,&quot;buildNumber&quot;:&quot;192&quot;,&quot;buildKey&quot;:&quot;&quot;,&quot;debug&quot;:false,&quot;environment&quot;:&quot;production&quot;,&quot;googleAnalyticsId&quot;:&quot;UA-26524418-48&quot;,&quot;launchDarklyAuthKey&quot;:&quot;5c63387e40bda9329a652b74&quot;,&quot;rootElementClass&quot;:null,&quot;rootElementId&quot;:&quot;mega-menu-target&quot;,&quot;rootElementSelector&quot;:&quot;#mega-menu-target&quot;,&quot;production&quot;:true,&quot;tagName&quot;:&quot;&quot;,&quot;version&quot;:&quot;1.6.28&quot;,&quot;featureFlagsDomain&quot;:&quot;https://www.dndbeyond.com&quot;}"
+    data-environment="production"></div>
+<script src="https://media.dndbeyond.com/mega-menu/ebe08ae8e23ddbaec45a.megaMenu.bundle.js"></script>
+<script src="https://media.dndbeyond.com/mega-menu/26fc4e82a3dc54976e3f.1.bundle.js"></script>
+</div>
+
+    <header class="main mega-menu__fallback">
+        <nav role="navigation" id="navigation_menu">
+            <ul class="nav-list">
+        <li class="nav-list__item nav-list__item--section">
+            <a href="/collections"><span class="nav-list__item__label">Collections</span></a>
+<ul class="nav-list nav-list--nested">
+        <li class="nav-list__item ">
+            <a href="/my-characters"><span class="nav-list__item__label">My Characters</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/my-campaigns"><span class="nav-list__item__label">My Campaigns</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/my-encounters"><span class="nav-list__item__label">My Encounters</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/my-dice"><span class="nav-list__item__label">My Dice</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/my-collection"><span class="nav-list__item__label">My Homebrew Collection</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/my-creations"><span class="nav-list__item__label">My Homebrew Creations</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/homebrew"><span class="nav-list__item__label">Browse &amp; Create Homebrew</span></a>
+        </li>
+</ul>
+        </li>
+        <li class="nav-list__item nav-list__item--section">
+            <a href="/game-rules"><span class="nav-list__item__label">Game Rules</span></a>
+<ul class="nav-list nav-list--nested">
+        <li class="nav-list__item ">
+            <a href="/races"><span class="nav-list__item__label">Races</span></a>
+        </li>
+        <li class="nav-list__item nav-list__item--section">
+            <a href="/classes"><span class="nav-list__item__label">Classes</span></a>
+<ul class="nav-list nav-list--nested">
+        <li class="nav-list__item ">
+            <a href="/classes"><span class="nav-list__item__label">All Classes</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/classes/artificer"><span class="nav-list__item__label">Artificer</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/classes/barbarian"><span class="nav-list__item__label">Barbarian</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/classes/bard"><span class="nav-list__item__label">Bard</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/classes/cleric"><span class="nav-list__item__label">Cleric</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/classes/druid"><span class="nav-list__item__label">Druid</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/classes/fighter"><span class="nav-list__item__label">Fighter</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/classes/monk"><span class="nav-list__item__label">Monk</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/classes/paladin"><span class="nav-list__item__label">Paladin</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/classes/ranger"><span class="nav-list__item__label">Ranger</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/classes/rogue"><span class="nav-list__item__label">Rogue</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/classes/sorcerer"><span class="nav-list__item__label">Sorcerer</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/classes/warlock"><span class="nav-list__item__label">Warlock</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/classes/wizard"><span class="nav-list__item__label">Wizard</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <span class="nav-list__item__label">Additional</span>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/classes/blood-hunter"><span class="nav-list__item__label">Blood Hunter</span></a>
+        </li>
+</ul>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/backgrounds"><span class="nav-list__item__label">Backgrounds</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/feats"><span class="nav-list__item__label">Feats</span></a>
+        </li>
+        <li class="nav-list__item nav-list__item--section">
+            <a href="/spells"><span class="nav-list__item__label">Spells</span></a>
+<ul class="nav-list nav-list--nested">
+        <li class="nav-list__item ">
+            <a href="/spells"><span class="nav-list__item__label">All Spells</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/spells/class/artificer"><span class="nav-list__item__label">Artificer Spells</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/spells/class/bard"><span class="nav-list__item__label">Bard Spells</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/spells/class/cleric"><span class="nav-list__item__label">Cleric Spells</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/spells/class/druid"><span class="nav-list__item__label">Druid Spells</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/spells/class/paladin"><span class="nav-list__item__label">Paladin Spells</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/spells/class/ranger"><span class="nav-list__item__label">Ranger Spells</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/spells/class/sorcerer"><span class="nav-list__item__label">Sorcerer Spells</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/spells/class/warlock"><span class="nav-list__item__label">Warlock Spells</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/spells/class/wizard"><span class="nav-list__item__label">Wizard Spells</span></a>
+        </li>
+</ul>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/magic-items"><span class="nav-list__item__label">Magic Items</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/monsters"><span class="nav-list__item__label">Monsters</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/equipment"><span class="nav-list__item__label">Equipment</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/vehicles"><span class="nav-list__item__label">Vehicles</span></a>
+        </li>
+</ul>
+        </li>
+        <li class="nav-list__item nav-list__item--section">
+            <a href="/sources"><span class="nav-list__item__label">Sources</span></a>
+<ul class="nav-list nav-list--nested">
+        <li class="nav-list__item ">
+            <a href="/sources"><span class="nav-list__item__label">View All</span></a>
+        </li>
+        <li class="nav-list__item nav-list__item--section">
+            <a href="/sources#Sourcebooks"><span class="nav-list__item__label">Sourcebooks</span></a>
+<ul class="nav-list nav-list--nested">
+        <li class="nav-list__item ">
+            <a href="/sources/one-dnd"><span class="nav-list__item__label">One D&amp;D Playtest Materials</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/phb"><span class="nav-list__item__label">Player&#x27;s Handbook</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/dmg"><span class="nav-list__item__label">Dungeon Master&#x27;s Guide</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/mm"><span class="nav-list__item__label">Monster Manual</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/basic-rules"><span class="nav-list__item__label">Basic Rules</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/erftlw"><span class="nav-list__item__label">Eberron: Rising from the Last War</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/egtw"><span class="nav-list__item__label">Explorer&#x27;s Guide to Wildemount</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/ftod"><span class="nav-list__item__label">Fizban&#x27;s Treasury of Dragons</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/motm"><span class="nav-list__item__label">Monsters of the Multiverse</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/moot"><span class="nav-list__item__label">Mythic Odysseys of Theros</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/sais"><span class="nav-list__item__label">Spelljammer: Adventures in Space</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/sacoc"><span class="nav-list__item__label">Strixhaven: A Curriculum of Chaos</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/tcoe"><span class="nav-list__item__label">Tasha&#x27;s Cauldron of Everything</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/vrgtr"><span class="nav-list__item__label">Van Richten&#x27;s Guide to Ravenloft</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/xgte"><span class="nav-list__item__label">Xanathar&#x27;s Guide to Everything</span></a>
+        </li>
+</ul>
+        </li>
+        <li class="nav-list__item nav-list__item--section">
+            <a href="/sources#Adventures"><span class="nav-list__item__label">Adventures</span></a>
+<ul class="nav-list nav-list--nested">
+        <li class="nav-list__item ">
+            <a href="/sources/bgdia"><span class="nav-list__item__label">Baldur&#x27;s Gate: Descent into Avernus</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/cm"><span class="nav-list__item__label">Candlekeep Mysteries</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/cotn"><span class="nav-list__item__label">Critical Role: Call of the Netherdeep</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/cos"><span class="nav-list__item__label">Curse of Strahd</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/doip"><span class="nav-list__item__label">Dragon of Icespire Peak</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/sotdq"><span class="nav-list__item__label">Dragonlance: Shadow of the Dragon Queen</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/dosi"><span class="nav-list__item__label">Dragons of Stormwreck Isle</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/gos"><span class="nav-list__item__label">Ghosts of Saltmarsh</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/hotdq"><span class="nav-list__item__label">Hoard of the Dragon Queen</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/idrotf"><span class="nav-list__item__label">Icewind Dale: Rime of the Frostmaiden</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/jttrc"><span class="nav-list__item__label">Journeys through the Radiant Citadel</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/lmop"><span class="nav-list__item__label">Lost Mine of Phandelver</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/oota"><span class="nav-list__item__label">Out of the Abyss</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/pota"><span class="nav-list__item__label">Princes of the Apocalypse</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/rot"><span class="nav-list__item__label">Rise of Tiamat</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/skt"><span class="nav-list__item__label">Storm King&#x27;s Thunder</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/tftyp"><span class="nav-list__item__label">Tales from the Yawning Portal</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/twbtw"><span class="nav-list__item__label">The Wild Beyond the Witchlight</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/toa"><span class="nav-list__item__label">Tomb of Annihilation</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/wdh"><span class="nav-list__item__label">Waterdeep: Dragon Heist</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/sources/wdotmm"><span class="nav-list__item__label">Waterdeep: Dungeon of the Mad Mage</span></a>
+        </li>
+</ul>
+        </li>
+</ul>
+        </li>
+        <li class="nav-list__item nav-list__item--section">
+            <a href="/tools"><span class="nav-list__item__label">Tools</span></a>
+<ul class="nav-list nav-list--nested">
+        <li class="nav-list__item ">
+            <a href="/characters/builder#"><span class="nav-list__item__label">Character Builder</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/encounter-builder"><span class="nav-list__item__label">Encounters</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/player-app"><span class="nav-list__item__label">Mobile App</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="https://avrae.io"><span class="nav-list__item__label">Avrae Discord Bot</span></a>
+        </li>
+</ul>
+        </li>
+        <li class="nav-list__item nav-list__item--section">
+            <a href="/marketplace"><span class="nav-list__item__label">Marketplace</span></a>
+<ul class="nav-list nav-list--nested">
+        <li class="nav-list__item ">
+            <a href="/marketplace"><span class="nav-list__item__label">Store</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/subscribe"><span class="nav-list__item__label">Subscriptions</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/marketplace/redeem-key"><span class="nav-list__item__label">Redeem A Key</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/account/marketplace"><span class="nav-list__item__label">Order History</span></a>
+        </li>
+</ul>
+        </li>
+        <li class="nav-list__item nav-list__item--section">
+            <a href="/media"><span class="nav-list__item__label">Media</span></a>
+<ul class="nav-list nav-list--nested">
+        <li class="nav-list__item ">
+            <a href="/articles"><span class="nav-list__item__label">Articles</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="https://www.twitch.tv/dndbeyond"><span class="nav-list__item__label">Twitch</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="https://www.youtube.com/channel/UCPy-338BEVgDkQade0qJmkw"><span class="nav-list__item__label">YouTube</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="https://www.youtube.com/playlist?list=PLPjdPog_vKX1wY1j_K-H8u6rqyQVZ5YSN"><span class="nav-list__item__label">Dev Updates</span></a>
+        </li>
+</ul>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/forums"><span class="nav-list__item__label">Forums</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/how-to-play-dnd"><span class="nav-list__item__label">New Player Guide</span></a>
+        </li>
+        <li class="nav-list__item ">
+            <a href="/store/subscribe"><span class="nav-list__item__label">Subscribe</span></a>
+        </li>
+</ul>
+
+        </nav>
+        <div class="search-form-container">
+            <form class="search-form" method="get" action="/search" id="search-form-mobile" data-validation-disabled="true">
+                <input name="q" class="search-form__query" autocomplete="on" placeholder="Search Everything...">
+            </form>
+        </div>
+        <a href="/">
+            <img src="/app/images/dnd-beyond-logo.svg" class="site-logo" alt="D&amp;D Beyond home" />
+        </a>
+        <i class="menu-button" onclick="toggleBurgerMenu();"></i>
+        <i class="search-button" onclick="toggleSearchForm();"></i>
+    </header>
+</div>
+
+<script>
+
+    window.addEventListener('click', function(e){
+        // If the user IS NOT clicking on a menu item and IS NOT clicking the Menu button,
+        // the burger menu should collapse again:
+        if (e.target.className=='menu-button'){
+            // We prevent bubling the event (otherwise the click event will be fired for the rest of the body)
+            e.stopPropagation();
+        }
+        // If the user clicks OUTSIDE the Menu, we hide the burger menu:
+        else if (!document.getElementById('navigation_menu').contains(e.target)){
+            if (document.body.classList.contains('burger-open')){
+                toggleBurgerMenu();
+            }
+        }
+    });
+
+    function toggleBurgerMenu() {
+        document.body.classList.toggle("burger-open");
+    }
+    function toggleSearchForm() {
+        document.body.classList.toggle("search-open");
+    }
+    document.querySelectorAll(".nav-list__item--section > a").forEach(el => el.addEventListener('click', (event) => {
+        event.preventDefault();
+        el.parentElement.classList.toggle("subnav-open");
+    }));
+</script>
+
+        <main>
+
+    <div style="position:relative;" class="container">
+        <div name="character-app"><div
+    id="character-tools-target"
+
+    data-config="{&quot;apiInfo&quot;:{&quot;WEBSITE&quot;:&quot;https://www.dndbeyond.com&quot;,&quot;CHARACTER_SERVICE&quot;:&quot;https://character-service.dndbeyond.com&quot;,&quot;GAME_DATA_SERVICE&quot;:&quot;https://gamedata-service.dndbeyond.com&quot;},&quot;gameLogApiEndpoint&quot;:&quot;https://www.dndbeyond.com&quot;,&quot;diceAssetEndpoint&quot;:&quot;https://www.dndbeyond.com/dice&quot;,&quot;diceApiEndpoint&quot;:&quot;https://dice-service.dndbeyond.com&quot;,&quot;analyticTrackingId&quot;:&quot;UA-26524418-48&quot;,&quot;authEndpoint&quot;:&quot;https://auth-service.dndbeyond.com/v1/cobalt-token&quot;,&quot;env&quot;:&quot;production&quot;}"
+    data-environment="production"></div>
+<link href="https://media.dndbeyond.com/character-app/static/css/main.f02edbbc.css" rel="stylesheet" />
+<script src="https://media.dndbeyond.com/character-app/static/js/main.90eeedaf.js"></script>
+<script src="https://media.dndbeyond.com/character-app/static/js/415.10587e19.chunk.js"></script>
+</div>
+    </div>
+
+        </main>
+    </div>
+<footer>
+    <div class="ddb-footer">
+        <div class="ddb-footer-wrapper ddb-footer-wrapper-upper">
+            <div class="ddb-footer-upper">
+                <div class="ddb-footer-logo">
+                    <a href="/" class="ddb-footer-logo-image"></a>
+                    <div class="ddb-footer-logo-byline">Play With Advantage</div>
+                </div>
+                <div class="ddb-footer-links">
+                    <div class="ddb-footer-links-list-wrapper">
+                        <ul class="ddb-footer-links-list ddb-footer-links-list-quick-links">
+                            <li class="ddb-footer-links-list-label">Quick Links</li>
+                            <li class="ddb-footer-links-list-item">
+                                <a href="/compendium" class="link">Compendium</a>
+                            </li>
+                            <li class="ddb-footer-links-list-item">
+                                <a href="/characters/builder" class="link">Builder</a>
+                            </li>
+                            <li class="ddb-footer-links-list-item">
+                                <a href="/characters" class="link">Characters</a>
+                            </li>
+                            <li class="ddb-footer-links-list-item">
+                                <a href="/changelog" class="link">Changelog</a>
+                            </li>
+                                <li class="ddb-footer-links-list-item">
+                                    <a href="https://company.wizards.com/en/careers" class="link" target="_blank">Careers</a>
+                                </li>
+                        </ul>
+                        <ul class="ddb-footer-links-list ddb-footer-links-list-support">
+                            <li class="ddb-footer-links-list-label">Support</li>
+                            <li class="ddb-footer-links-list-item">
+                                <a href="http://dndbeyond-support.wizards.com" class="link">Help Portal</a>
+                            </li>
+                            <li class="ddb-footer-links-list-item">
+                                <a href="//www.dndbeyond.com/forums/d-d-beyond-general/bugs-support" class="link">Support Forum</a>
+                            </li>
+                            <li class="ddb-footer-links-list-item">
+                                <a href="https://dndbeyond.zendesk.com/hc/en-us/articles/360055233654-Contact-Information" class="link">Contact Us</a>
+                            </li>
+                                <li class="ddb-footer-links-list-item">
+                                    <a href="https://company.wizards.com/en/legal/wizards-coasts-privacy-policy#donotsell" class="link">Do Not Sell My Info</a>
+                                </li>
+                            <li class="ddb-footer-links-list-item">
+                                <a href="/cookies" class="link">Cookies</a>
+                            </li>
+                        </ul>
+                        <ul class="ddb-footer-links-list ddb-footer-links-list-follow-us">
+                            <li class="ddb-footer-links-list-label">Follow Us</li>
+                            <li class="ddb-footer-links-list-item">
+                                <a href="https://twitter.com/DnDBeyond" class="link">Twitter</a>
+                            </li>
+                            <li class="ddb-footer-links-list-item">
+                                <a href="https://www.facebook.com/dndbeyond/" class="link">Facebook</a>
+                            </li>
+                            <li class="ddb-footer-links-list-item">
+                                <a href="https://www.youtube.com/channel/UCPy-338BEVgDkQade0qJmkw" class="link">YouTube</a>
+                            </li>
+                            <li class="ddb-footer-links-list-item">
+                                <a href="https://www.twitch.tv/dndbeyond" class="link">Twitch</a>
+                            </li>
+                            <li class="ddb-footer-links-list-item">
+                                <a href="https://www.instagram.com/dndbeyond/" class="link">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ddb-footer-wrapper ddb-footer-wrapper-lower">
+            <div class="ddb-footer-lower">
+                <div class="ddb-footer-copyright">
+                    <div class="ddb-footer-copyright-site">
+                        &copy;2022 D&amp;D Beyond | All Rights Reserved
+                    </div>
+                    <div class="ddb-footer-copyright-wotc">
+                        Dungeons & Dragons, D&D, their respective logos, and all Wizards titles and characters are property of Wizards of the Coast LLC in the U.S.A. and other countries. &copy;2022 Wizards.
+                    </div>
+                </div>
+                <div class="ddb-footer-lower-links">
+                        <a href="https://company.wizards.com/en/legal/wizards-coasts-privacy-policy" class="ddb-footer-lower-links-item">Privacy Policy</a>
+                        <a href="https://company.wizards.com/en/legal/terms" class="ddb-footer-lower-links-item">Terms of Service</a>
+                        <a href="http://dndbeyond-support.wizards.com" class="ddb-footer-lower-links-item">Support</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
+
+000001D463D5DB50

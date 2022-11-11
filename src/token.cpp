@@ -1,3 +1,9 @@
+#include "token.h"
+
+#include "webScrape.h"
+#include "func.h"
+#include "database.h"
+#include "roll.h"
 #include <stdio.h>      
 #include <math.h>
 #include <cstdlib>
@@ -32,8 +38,8 @@ void interpret(vector<string> tokens)
     }
     else if (tokens[0] == "add" && tokens[1] == "player")
     {
-        string url("https://www.dndbeyond.com/characters/44851421");
-        request(url); //test character sheet
+        string testURL = "https://www.dndbeyond.com/characters/44851421";
+        webScrape(testURL);
     }
     else if (tokens[0] == "del" && tokens[1] == "player")
     {
