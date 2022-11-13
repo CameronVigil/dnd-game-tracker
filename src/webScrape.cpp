@@ -19,16 +19,23 @@ int webScrape(string importedURL)
     
     //function that performs web scraping
     PyRun_SimpleString(
-        "import requests                              \n"\
-        "def mul(importedURL):                        \n"\
+        "import requests                            \n"\
+        "from bs4 import BeautifulSoup              \n"\
+        "def mul(importedURL):                      \n"\
 
-        "   url = importedURL                              \n"\
-        "   print(importedURL)                                     \n"\
-        "   agent = { \"User-Agent\":'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36' }\n"\
-        "   print(agent)\n"\
-        "   response = requests.get(url, headers=agent).text\n"\
-        "   print(response)\n"
-        "   return response                              \n"\
+        "   url = importedURL                       \n"\
+        "   print(importedURL)                      \n"\
+        "   agent = { 'User-Agent':'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36' }    \n"\
+        "   print(agent)                            \n"\
+        "   response = requests.get(url, headers=agent).text                                \n"\
+        "   print(response)                         \n"
+        "   soup = BeautifulSoup(response, 'html.parser')                                   \n"\
+
+        "   proficiency = soup.find('div', {'class': 'ct-proficiency-bonus-box__value '})   \n"\
+        "   print(proficiency.get('aria-label'))    \n"\
+
+
+        "   return response                         \n"\
 
     );
 
