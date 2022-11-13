@@ -1,9 +1,3 @@
-#include "token.h"
-
-#include "webScrape.h"
-#include "func.h"
-#include "database.h"
-#include "roll.h"
 #include <stdio.h>      
 #include <math.h>
 #include <cstdlib>
@@ -14,11 +8,10 @@
 #include <string>
 
 #include "token.h"
-#include "scrape.h"
+#include "roll.h"
+#include "webScrape.h"
 #include "func.h"
 #include "database.h"
-#include "roll.h"
-
 
 using namespace std;
 

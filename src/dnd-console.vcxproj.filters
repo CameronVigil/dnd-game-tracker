@@ -27,6 +27,9 @@
     <ClInclude Include="roll.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="webScrape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="func.cpp">
@@ -41,5 +44,15 @@
     <ClCompile Include="token.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="webScrape.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+    <Text Include="CharacterSheetHTML.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakePresets.json" />
   </ItemGroup>
 </Project>

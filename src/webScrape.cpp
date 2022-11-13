@@ -3,6 +3,10 @@
 #include <string>
 #include <xkeycheck.h>
 #include <iostream>
+
+
+#include "webScrape.h"
+
 using namespace std;
 int webScrape(string importedURL)
 {
