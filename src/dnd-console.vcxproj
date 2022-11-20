@@ -19,8 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="check.h" />
     <ClInclude Include="database.h" />
     <ClInclude Include="func.h" />
+    <ClInclude Include="init.h" />
     <ClInclude Include="webScrape.h" />
     <ClInclude Include="roll.h" />
     <ClInclude Include="token.h" />
@@ -38,13 +40,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="CMakePresets.json" />
+    <None Include="pythonWebScrapefunction.py" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{d473e227-2dc1-4e8a-a727-3fa45bd59c62}</ProjectGuid>
     <RootNamespace>dndconsole</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

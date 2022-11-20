@@ -31,7 +31,7 @@ void interpret(vector<string> tokens)
     }
     else if (tokens[0] == "add" && tokens[1] == "player")
     {
-        string testURL = "https://www.dndbeyond.com/characters/44851421";
+        string testURL = "https://character-service.dndbeyond.com/character/v5/character/44851421";
         webScrape(testURL);
     }
     else if (tokens[0] == "del" && tokens[1] == "player")

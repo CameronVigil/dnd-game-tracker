@@ -30,6 +30,12 @@
     <ClInclude Include="webScrape.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="check.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="init.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="func.cpp">
@@ -54,5 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="CMakePresets.json" />
+    <None Include="pythonWebScrapefunction.py" />
   </ItemGroup>
 </Project>

@@ -11,6 +11,6 @@ jsonPage = json.loads(page)
 
 list_of_stats = jsonPage['data']['stats']
 print(list_of_stats)
-  
+
 
 input('Press ENTER to exit')
