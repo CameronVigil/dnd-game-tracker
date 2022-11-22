@@ -2,6 +2,8 @@
 #include "skillcheck.h"
 #include "./ui_widget.h"
 #include <QDebug>
+#include <QString>
+#include <string>
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -157,5 +159,38 @@ void Widget::on_Contest_Single_toggled(bool checked)
     {
         check.contest = true;
     }
+}
+
+//Roll for initiative list
+void Widget::on_pushButton_clicked()
+{
+    //Clears (but doesn't delete) names from the display list
+    while(ui->listWidget->count()>0)
+    {
+        ui->listWidget->takeItem(0);//handle the item if you don't
+                              //have a pointer to it elsewhere
+    }
+
+    //---->placeholder
+    //Populates name list
+    init.TEMPnames();
+
+    //Assign Initiative
+    init.AssignInit();
+    for(int i = 0; i<init.num_p; i++)
+    {
+
+        //convert std string to QString to then be sent to the widget
+        string order = init.combatOrder[i];
+        QString str = QString::fromLocal8Bit(order.c_str());
+        //Add the QString to widget's display
+        ui->listWidget->addItem(str);
+
+
+        qDebug() << init.p[i].initiative;
+    }
+
+    //Reset Initiative for next button press
+    init.resetInit();
 }
 
