@@ -16,9 +16,12 @@ public:
       string name;
       int initiative = 0;
     };
-    const int num_p = 3;  //---->Placeholder
-    struct player p[3];
-    string combatOrder[3];
+    static const int num_p = 5;  //---->Placeholder
+    struct player p[num_p];
+    string combatOrder[5];
+
+    //placeholder
+    void TEMPnames();//---->placeholder
 
     int getInit(string);
     void AssignInit();
