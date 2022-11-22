@@ -50,6 +50,8 @@ private slots:
 
     void on_Contest_Single_toggled(bool checked);
 
+    void on_pushButton_clicked();
+
 private:
     Ui::Widget *ui;
 };
