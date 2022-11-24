@@ -1,34 +1,18 @@
 #ifndef INITIATIVE_H
 #define INITIATIVE_H
-#include "dice.h"
-
+#include "player.h"
 #include <QWidget>
 #include <string>
 using namespace std;
 
 //Roll for Initiative
-class Init
-{
-public:
-    Dice d;
-    struct player
-    {
-      string name;
-      int initiative = 0;
-    };
-    static const int num_p = 5;  //---->Placeholder
-    struct player p[num_p];
-    string combatOrder[5];
 
-    //placeholder
-    void TEMPnames();//---->placeholder
 
-    int getInit(string);
-    void AssignInit();
-    void SortOrder();
-    void resetInit();
+int getInit(string name,std::vector<Player> *players);
+void AssignInit(std::vector<Player> *players);
+void SortOrder(std::vector<Player> *players);
+void resetAllInitiatives(std::vector<Player> *players);
 
-};
 
 
 

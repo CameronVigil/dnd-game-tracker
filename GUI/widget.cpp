@@ -1,5 +1,7 @@
 #include "widget.h"
 #include "skillcheck.h"
+#include "player.h"
+#include "initiative.h"
 #include "./ui_widget.h"
 #include <QDebug>
 #include <QString>
@@ -162,7 +164,7 @@ void Widget::on_Contest_Single_toggled(bool checked)
 }
 
 //Roll for initiative list
-void Widget::on_pushButton_clicked()
+void Widget::on_pushButton_clicked(std::vector<Player> *players, std::string *combatOrder)
 {
     //Clears (but doesn't delete) names from the display list
     while(ui->listWidget->count()>0)
@@ -171,26 +173,26 @@ void Widget::on_pushButton_clicked()
                               //have a pointer to it elsewhere
     }
 
-    //---->placeholder
-    //Populates name list
-    init.TEMPnames();
 
     //Assign Initiative
-    init.AssignInit();
-    for(int i = 0; i<init.num_p; i++)
+    AssignInit(players);
+    int i = 0;
+    for(auto it = players->begin(); it != players->end(); ++it)
     {
 
         //convert std string to QString to then be sent to the widget
-        string order = init.combatOrder[i];
+        string order = combatOrder[i];
         QString str = QString::fromLocal8Bit(order.c_str());
         //Add the QString to widget's display
         ui->listWidget->addItem(str);
 
 
-        qDebug() << init.p[i].initiative;
+        qDebug() << it->getInitiative();
+        i++;
     }
+    i=0;
 
     //Reset Initiative for next button press
-    init.resetInit();
+    resetAllInitiatives(players);
 }
 

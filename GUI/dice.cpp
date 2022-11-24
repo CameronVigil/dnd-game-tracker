@@ -1,6 +1,6 @@
 #include "dice.h"
 
-int Dice::diceRoll(int max)
+int diceRoll(int max)
 {
     int min = 1;
 

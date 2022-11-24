@@ -2,13 +2,11 @@
 #define SKILLCHECK_H
 
 #include <QWidget>
-#include "dice.h"
 
 //Ability Check
 class Check
 {
 public:
-    Dice dice;
     int TD = 0;         //Task Difficulty
     int Advantage = 0;  //1 = advantage, 0 = neutral, -1 = disadvantage
     int AdvScore = 0;   //Player's advantage score, added to a total later

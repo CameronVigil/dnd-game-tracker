@@ -1,56 +1,53 @@
 #include "initiative.h"
+#include "player.h"
+#include "dice.h"
+
 #include <algorithm>
 #include <vector>
 
-void Init::TEMPnames()
-{
-   p[0].name = "Sam";
-   p[1].name = "Tom";
-   p[2].name = "Sally";
-   p[3].name = "Bill";
-   p[4].name = "Robert";
 
-}
-
-int Init::getInit(string name)
+int getInit(string name, std::vector<Player> *players)
 {
-    return(d.diceRoll(20));
-    //return (d.diceRoll(20)+dex(name) MISSING MISSING MISSING MISSING MISSING
+    for(auto it = players->begin(); it != players->end(); ++it){
+        if(it->name == name){
+            return (diceRoll(20)+ it->getInitiative());
+        }
+    }
 }
 
 //Assigns Initiative to each player
-void Init::AssignInit()
+void AssignInit(std::vector<Player> *players)
 {
     //each player gets initiative value
-    for(int i = 0; i < num_p; i++)
-    {
-        p[i].initiative = getInit(p[i].name);
+    for(auto it = players->begin(); it != players->end(); ++it){
+        it->assignInitiative(getInit(it->name, players));
     }
     //order is sorted in descending order
-    SortOrder();
+    SortOrder(players);
 }
 
 //Sort in descending order
-void Init::SortOrder()
+void SortOrder(std::vector<Player> *players)
 {
-
-    //assign Name to order of combat (unsorted)
-    for(int i = 0; i < num_p; i++)
-    {
-        combatOrder[i] = p[i].name;
-    }
-
-    int tempArr[num_p];
     //copy p[n].initiative to a temporary array
-    for(int i = 0; i<num_p; i++)
-    {
-        tempArr[i] = p[i].initiative;
+    int tempArr[players->size()];
+    std:string combatOrder[players->size()];
+    int i = 0;
+    //assign Name to order of combat (unsorted)
+
+    for(auto it = players->begin(); it != players->end(); ++it){
+        combatOrder[i] = it->name;
+        tempArr[i] = it->getInitiative();
+        i++;
     }
+    i = 0;
+
+
 
     //Sort tempArr
-    for(int i = 0; i<num_p; i++)
+    for(int i = 0; i<players->size(); i++)
     {
-        for(int j = i+1; j < num_p; j++)
+        for(int j = i+1; j < players->size(); j++)
         {
             if( tempArr[i] < tempArr[j])
             {
@@ -67,11 +64,9 @@ void Init::SortOrder()
     }
 }
 
-//reset initiative to 0
-void Init::resetInit()
+void resetAllInitiatives(std::vector<Player> *players)
 {
-    for(int i = 0; i<num_p; i++)
-    {
-        p[i].initiative = 0;
+    for(auto it = players->begin(); it != players->end(); ++it){
+        it->resetInitiative();
     }
 }
