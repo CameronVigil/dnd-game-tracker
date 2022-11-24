@@ -1,9 +1,7 @@
 #ifndef WIDGET_H
 #define WIDGET_H
 #include "skillcheck.h"
-#include "dice.h"
-#include "initiative.h"
-
+#include "player.h"
 #include <QWidget>
 #include <string>
 using namespace std;
@@ -20,9 +18,8 @@ class Widget : public QWidget
     Q_OBJECT
 
 public:
-    Dice dice;
-    Init init;
     Check check;
+
     Widget(QWidget *parent = nullptr);
 
     ~Widget();
@@ -50,7 +47,7 @@ private slots:
 
     void on_Contest_Single_toggled(bool checked);
 
-    void on_pushButton_clicked();
+    void on_pushButton_clicked(std::vector<Player> *players,std::string *combatOrder);
 
 private:
     Ui::Widget *ui;

@@ -13,6 +13,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package (Python COMPONENTS Interpreter Development)
+find_package(PythonLibs 3.12 REQUIRED)
+
+include_directories ( ${PYTHON_INCLUDE_DIRS} )
+link_libraries( ${PYTHON_LIBRARIES})
 
 set(PROJECT_SOURCES
         main.cpp
@@ -25,6 +30,11 @@ set(PROJECT_SOURCES
         dice.cpp
         initiative.h
         initiative.cpp
+        player.cpp
+        player.h
+        webScrape.cpp
+        webScrape.h
+
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

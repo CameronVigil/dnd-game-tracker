@@ -1,10 +1,11 @@
 #include "skillcheck.h"
+#include "dice.h"
 
 //recieves two dice rolls, returns highest/lowest based on advantage
 int Check::ProcessAd(int ad)
 {
-    int r1 = dice.diceRoll(20);  //dice roll 1
-    int r2 = dice.diceRoll(20);  //dice roll 2
+    int r1 = diceRoll(20);  //dice roll 1
+    int r2 = diceRoll(20);  //dice roll 2
 
     //advantage/neutral -> take highest of two rolls
     if(ad == 1 || ad == 0)
