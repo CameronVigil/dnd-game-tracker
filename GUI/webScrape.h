@@ -12,8 +12,13 @@
 
 using namespace std;
 
+int webScrapeStrength(string importedURL);
+int webScrapeDexterity(string importedURL);
+int webScrapeConstitution(string importedURL);
+int webScrapeIntelligence(string importedURL);
+int webScrapeWisdom(string importedURL);
+int webScrapeCharisma(string importedURL);
 
-int webScrapeInitiative(string importedURL);
 std::string webScrapeName(string importedURL);
 
 #endif // WEBSCRAPE_H

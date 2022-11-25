@@ -17,11 +17,19 @@ void Player::assignInitiative(int init){
 }
 
 //add player to vector of players
-void Player::addPlayer(std::string url, std::vector<Player> *players){
+void addPlayer(std::string url, std::vector<Player> *players){
    Player player;
-   player.initiative = webScrapeInitiative(url);
+   cout << "performing web scrape" << endl;
    player.name = webScrapeName(url);
+   player.strength = webScrapeStrength(url);
+   player.dexterity = webScrapeDexterity(url);
+   player.constitution = webScrapeIntelligence(url);
+   player.intelligence = webScrapeIntelligence(url);
+   player.wisdom = webScrapeWisdom(url);
+
+
    players->push_back(player);
+   cout << player.name << endl;
 }
 //remove player from vector of players
 void Player::removePlayer(std::string name, std::vector<Player> *players){

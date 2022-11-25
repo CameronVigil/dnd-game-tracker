@@ -299,14 +299,30 @@
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Initiative Roll&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QPlainTextEdit" name="plainTextEdit">
+  <widget class="QLineEdit" name="addPlayerLineEdit">
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>100</y>
-     <width>104</width>
-     <height>87</height>
+     <y>70</y>
+     <width>154</width>
+     <height>26</height>
     </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Add a player URL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addPlayerButton">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>110</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Player</string>
    </property>
   </widget>
  </widget>

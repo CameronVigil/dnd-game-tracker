@@ -196,3 +196,15 @@ void Widget::on_pushButton_clicked(std::vector<Player> *players, std::string *co
     resetAllInitiatives(players);
 }
 
+
+//add player
+void Widget::on_addPlayerButton_clicked()
+{
+    QString url;
+    url = ui->addPlayerLineEdit->text();
+
+    //add player to players vector
+    addPlayer(url.toStdString(),&players);
+}
+
+
