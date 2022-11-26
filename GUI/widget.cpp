@@ -164,7 +164,7 @@ void Widget::on_Contest_Single_toggled(bool checked)
 }
 
 //Roll for initiative list
-void Widget::on_pushButton_clicked(std::vector<Player> *players, std::string *combatOrder)
+void Widget::on_pushButton_clicked()
 {
     //Clears (but doesn't delete) names from the display list
     while(ui->listWidget->count()>0)
@@ -175,9 +175,9 @@ void Widget::on_pushButton_clicked(std::vector<Player> *players, std::string *co
 
 
     //Assign Initiative
-    AssignInit(players);
+    AssignInit(&players);
     int i = 0;
-    for(auto it = players->begin(); it != players->end(); ++it)
+    for(auto it = players.begin(); it != players.end(); ++it)
     {
 
         //convert std string to QString to then be sent to the widget
@@ -193,7 +193,7 @@ void Widget::on_pushButton_clicked(std::vector<Player> *players, std::string *co
     i=0;
 
     //Reset Initiative for next button press
-    resetAllInitiatives(players);
+    resetAllInitiatives(&players);
 }
 
 

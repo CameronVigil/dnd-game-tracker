@@ -20,6 +20,7 @@ class Widget : public QWidget
 public:
     Check check;
     std::vector<Player> players;
+    std::string combatOrder [10];
 
     Widget(QWidget *parent = nullptr);
 
@@ -48,7 +49,7 @@ private slots:
 
     void on_Contest_Single_toggled(bool checked);
 
-    void on_pushButton_clicked(std::vector<Player> *players,std::string *combatOrder);
+    void on_pushButton_clicked();
 
 
     void on_addPlayerButton_clicked();

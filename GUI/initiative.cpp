@@ -40,7 +40,6 @@ void SortOrder(std::vector<Player> *players)
         tempArr[i] = it->getInitiative();
         i++;
     }
-    i = 0;
 
 
 
