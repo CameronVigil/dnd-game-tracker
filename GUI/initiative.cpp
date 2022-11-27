@@ -13,6 +13,7 @@ int getInit(string name, std::vector<Player> *players)
             return (diceRoll(20)+ it->getInitiative());
         }
     }
+    return 0;
 }
 
 //Assigns Initiative to each player

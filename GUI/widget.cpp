@@ -162,9 +162,9 @@ void Widget::on_Contest_Single_toggled(bool checked)
         check.contest = true;
     }
 }
-
+/*
 //Roll for initiative list
-void Widget::on_pushButton_clicked()
+void Widget::on_pushButton_clicked(bool checked)
 {
     //Clears (but doesn't delete) names from the display list
     while(ui->listWidget->count()>0)
@@ -190,15 +190,14 @@ void Widget::on_pushButton_clicked()
         qDebug() << it->getInitiative();
         i++;
     }
-    i=0;
 
     //Reset Initiative for next button press
     resetAllInitiatives(&players);
 }
-
+*/
 
 //add player
-void Widget::on_addPlayerButton_clicked()
+void Widget::on_addPlayerButton_clicked(bool checked)
 {
     QString url;
     url = ui->addPlayerLineEdit->text();

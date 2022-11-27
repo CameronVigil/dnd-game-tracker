@@ -49,10 +49,10 @@ private slots:
 
     void on_Contest_Single_toggled(bool checked);
 
-    void on_pushButton_clicked();
+   // void on_pushButton_clicked(bool checked);
 
 
-    void on_addPlayerButton_clicked();
+    void on_addPlayerButton_clicked(bool checked);
 
 
 private:

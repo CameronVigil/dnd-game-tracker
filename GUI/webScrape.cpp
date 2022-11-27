@@ -25,7 +25,7 @@ int webScrapeStrength(string importedURL)
         "def mul(importedURL):\n"\
         "   import requests\n"\
         "   import json\n"\
-        "   url = importedURL + '?includeCustomItems=true'\n"\
+        "   url = 'https://character-service.dndbeyond.com/character/v5/character/' + importedURL + '/?includeCustomItems=true'\n"\
         "   headers = {'value': 'application/json, text/plain, */*','accept': 'application/json, text/plain, */*; q=0.01','cookie': '_gsid=f2607384476d4731b4b03e80181b9119; Login.RedirectUrl=https://www.dndbeyond.com/; LoginState=4cebf440-3603-466a-9734-300418d63949; AWSALBTG=nVWa1cEqQzb1Dk7H4sFhxK5fUVoUx8WaGK4o2OsLicknT+jitW1XfGGl9CHotEcweY6GpfCo0FOu6H/HhxV4VFFm4qixaCoEybIINmStbEb2sj4dW8gUo68CVYCjk/6m6iG4eSk1GEmgqX1F/5yrSigXxvZm442nW97sSr/D5HGM; AWSALBTGCORS=nVWa1cEqQzb1Dk7H4sFhxK5fUVoUx8WaGK4o2OsLicknT+jitW1XfGGl9CHotEcweY6GpfCo0FOu6H/HhxV4VFFm4qixaCoEybIINmStbEb2sj4dW8gUo68CVYCjk/6m6iG4eSk1GEmgqX1F/5yrSigXxvZm442nW97sSr/D5HGM; AWSALB=yaMzOFcfLAPH1ePr/xnP1jmje+RXLqrNYn0YwPViB1o0EXUjk46E0C3XcALb/MyGK9kBwTAELYI2Ams/DFulq+4BXt+lStWznHKK1MKn/qVUG4wPE0nRHhyEB7Dt; AWSALBCORS=yaMzOFcfLAPH1ePr/xnP1jmje+RXLqrNYn0YwPViB1o0EXUjk46E0C3XcALb/MyGK9kBwTAELYI2Ams/DFulq+4BXt+lStWznHKK1MKn/qVUG4wPE0nRHhyEB7Dt; cookie-consent=granted; Geo={%22region%22:%22TX%22%2C%22country%22:%22US%22%2C%22continent%22:%22NA%22}'}\n"\
         "   page = requests.get(url, headers=headers).text\n"\
         "   jsonPage = json.loads(page)\n"\
@@ -38,9 +38,6 @@ int webScrapeStrength(string importedURL)
     PyObject* result = PyObject_CallFunction(func, "s", importedURL.c_str());
     int strength = (int)_PyLong_AsInt(result);
 
-    if (Py_FinalizeEx() < 0) {
-        exit(120);
-    }
     return strength;
 }
 int webScrapeDexterity(string importedURL)
@@ -58,7 +55,7 @@ int webScrapeDexterity(string importedURL)
         "def mul(importedURL):\n"\
         "   import requests\n"\
         "   import json\n"\
-        "   url = importedURL + '?includeCustomItems=true'\n"\
+        "   url = 'https://character-service.dndbeyond.com/character/v5/character/' + importedURL + '/?includeCustomItems=true'\n"\
         "   headers = {'value': 'application/json, text/plain, */*','accept': 'application/json, text/plain, */*; q=0.01','cookie': '_gsid=f2607384476d4731b4b03e80181b9119; Login.RedirectUrl=https://www.dndbeyond.com/; LoginState=4cebf440-3603-466a-9734-300418d63949; AWSALBTG=nVWa1cEqQzb1Dk7H4sFhxK5fUVoUx8WaGK4o2OsLicknT+jitW1XfGGl9CHotEcweY6GpfCo0FOu6H/HhxV4VFFm4qixaCoEybIINmStbEb2sj4dW8gUo68CVYCjk/6m6iG4eSk1GEmgqX1F/5yrSigXxvZm442nW97sSr/D5HGM; AWSALBTGCORS=nVWa1cEqQzb1Dk7H4sFhxK5fUVoUx8WaGK4o2OsLicknT+jitW1XfGGl9CHotEcweY6GpfCo0FOu6H/HhxV4VFFm4qixaCoEybIINmStbEb2sj4dW8gUo68CVYCjk/6m6iG4eSk1GEmgqX1F/5yrSigXxvZm442nW97sSr/D5HGM; AWSALB=yaMzOFcfLAPH1ePr/xnP1jmje+RXLqrNYn0YwPViB1o0EXUjk46E0C3XcALb/MyGK9kBwTAELYI2Ams/DFulq+4BXt+lStWznHKK1MKn/qVUG4wPE0nRHhyEB7Dt; AWSALBCORS=yaMzOFcfLAPH1ePr/xnP1jmje+RXLqrNYn0YwPViB1o0EXUjk46E0C3XcALb/MyGK9kBwTAELYI2Ams/DFulq+4BXt+lStWznHKK1MKn/qVUG4wPE0nRHhyEB7Dt; cookie-consent=granted; Geo={%22region%22:%22TX%22%2C%22country%22:%22US%22%2C%22continent%22:%22NA%22}'}\n"\
         "   page = requests.get(url, headers=headers).text\n"\
         "   jsonPage = json.loads(page)\n"\
@@ -71,9 +68,6 @@ int webScrapeDexterity(string importedURL)
     PyObject* result = PyObject_CallFunction(func, "s", importedURL.c_str());
     int dexterity = (int)_PyLong_AsInt(result);
 
-    if (Py_FinalizeEx() < 0) {
-        exit(120);
-    }
     return dexterity;
 }
 
@@ -92,7 +86,7 @@ int webScrapeConstitution(string importedURL)
         "def mul(importedURL):\n"\
         "   import requests\n"\
         "   import json\n"\
-        "   url = importedURL + '?includeCustomItems=true'\n"\
+        "   url = 'https://character-service.dndbeyond.com/character/v5/character/' + importedURL + '/?includeCustomItems=true'\n"\
         "   headers = {'value': 'application/json, text/plain, */*','accept': 'application/json, text/plain, */*; q=0.01','cookie': '_gsid=f2607384476d4731b4b03e80181b9119; Login.RedirectUrl=https://www.dndbeyond.com/; LoginState=4cebf440-3603-466a-9734-300418d63949; AWSALBTG=nVWa1cEqQzb1Dk7H4sFhxK5fUVoUx8WaGK4o2OsLicknT+jitW1XfGGl9CHotEcweY6GpfCo0FOu6H/HhxV4VFFm4qixaCoEybIINmStbEb2sj4dW8gUo68CVYCjk/6m6iG4eSk1GEmgqX1F/5yrSigXxvZm442nW97sSr/D5HGM; AWSALBTGCORS=nVWa1cEqQzb1Dk7H4sFhxK5fUVoUx8WaGK4o2OsLicknT+jitW1XfGGl9CHotEcweY6GpfCo0FOu6H/HhxV4VFFm4qixaCoEybIINmStbEb2sj4dW8gUo68CVYCjk/6m6iG4eSk1GEmgqX1F/5yrSigXxvZm442nW97sSr/D5HGM; AWSALB=yaMzOFcfLAPH1ePr/xnP1jmje+RXLqrNYn0YwPViB1o0EXUjk46E0C3XcALb/MyGK9kBwTAELYI2Ams/DFulq+4BXt+lStWznHKK1MKn/qVUG4wPE0nRHhyEB7Dt; AWSALBCORS=yaMzOFcfLAPH1ePr/xnP1jmje+RXLqrNYn0YwPViB1o0EXUjk46E0C3XcALb/MyGK9kBwTAELYI2Ams/DFulq+4BXt+lStWznHKK1MKn/qVUG4wPE0nRHhyEB7Dt; cookie-consent=granted; Geo={%22region%22:%22TX%22%2C%22country%22:%22US%22%2C%22continent%22:%22NA%22}'}\n"\
         "   page = requests.get(url, headers=headers).text\n"\
         "   jsonPage = json.loads(page)\n"\
@@ -125,7 +119,7 @@ int webScrapeIntelligence(string importedURL)
         "def mul(importedURL):\n"\
         "   import requests\n"\
         "   import json\n"\
-        "   url = importedURL + '?includeCustomItems=true'\n"\
+        "   url = 'https://character-service.dndbeyond.com/character/v5/character/' + importedURL + '/?includeCustomItems=true'\n"\
         "   headers = {'value': 'application/json, text/plain, */*','accept': 'application/json, text/plain, */*; q=0.01','cookie': '_gsid=f2607384476d4731b4b03e80181b9119; Login.RedirectUrl=https://www.dndbeyond.com/; LoginState=4cebf440-3603-466a-9734-300418d63949; AWSALBTG=nVWa1cEqQzb1Dk7H4sFhxK5fUVoUx8WaGK4o2OsLicknT+jitW1XfGGl9CHotEcweY6GpfCo0FOu6H/HhxV4VFFm4qixaCoEybIINmStbEb2sj4dW8gUo68CVYCjk/6m6iG4eSk1GEmgqX1F/5yrSigXxvZm442nW97sSr/D5HGM; AWSALBTGCORS=nVWa1cEqQzb1Dk7H4sFhxK5fUVoUx8WaGK4o2OsLicknT+jitW1XfGGl9CHotEcweY6GpfCo0FOu6H/HhxV4VFFm4qixaCoEybIINmStbEb2sj4dW8gUo68CVYCjk/6m6iG4eSk1GEmgqX1F/5yrSigXxvZm442nW97sSr/D5HGM; AWSALB=yaMzOFcfLAPH1ePr/xnP1jmje+RXLqrNYn0YwPViB1o0EXUjk46E0C3XcALb/MyGK9kBwTAELYI2Ams/DFulq+4BXt+lStWznHKK1MKn/qVUG4wPE0nRHhyEB7Dt; AWSALBCORS=yaMzOFcfLAPH1ePr/xnP1jmje+RXLqrNYn0YwPViB1o0EXUjk46E0C3XcALb/MyGK9kBwTAELYI2Ams/DFulq+4BXt+lStWznHKK1MKn/qVUG4wPE0nRHhyEB7Dt; cookie-consent=granted; Geo={%22region%22:%22TX%22%2C%22country%22:%22US%22%2C%22continent%22:%22NA%22}'}\n"\
         "   page = requests.get(url, headers=headers).text\n"\
         "   jsonPage = json.loads(page)\n"\
@@ -158,7 +152,7 @@ int webScrapeWisdom(string importedURL)
         "def mul(importedURL):\n"\
         "   import requests\n"\
         "   import json\n"\
-        "   url = importedURL + '?includeCustomItems=true'\n"\
+        "   url = 'https://character-service.dndbeyond.com/character/v5/character/' + importedURL + '/?includeCustomItems=true'\n"\
         "   headers = {'value': 'application/json, text/plain, */*','accept': 'application/json, text/plain, */*; q=0.01','cookie': '_gsid=f2607384476d4731b4b03e80181b9119; Login.RedirectUrl=https://www.dndbeyond.com/; LoginState=4cebf440-3603-466a-9734-300418d63949; AWSALBTG=nVWa1cEqQzb1Dk7H4sFhxK5fUVoUx8WaGK4o2OsLicknT+jitW1XfGGl9CHotEcweY6GpfCo0FOu6H/HhxV4VFFm4qixaCoEybIINmStbEb2sj4dW8gUo68CVYCjk/6m6iG4eSk1GEmgqX1F/5yrSigXxvZm442nW97sSr/D5HGM; AWSALBTGCORS=nVWa1cEqQzb1Dk7H4sFhxK5fUVoUx8WaGK4o2OsLicknT+jitW1XfGGl9CHotEcweY6GpfCo0FOu6H/HhxV4VFFm4qixaCoEybIINmStbEb2sj4dW8gUo68CVYCjk/6m6iG4eSk1GEmgqX1F/5yrSigXxvZm442nW97sSr/D5HGM; AWSALB=yaMzOFcfLAPH1ePr/xnP1jmje+RXLqrNYn0YwPViB1o0EXUjk46E0C3XcALb/MyGK9kBwTAELYI2Ams/DFulq+4BXt+lStWznHKK1MKn/qVUG4wPE0nRHhyEB7Dt; AWSALBCORS=yaMzOFcfLAPH1ePr/xnP1jmje+RXLqrNYn0YwPViB1o0EXUjk46E0C3XcALb/MyGK9kBwTAELYI2Ams/DFulq+4BXt+lStWznHKK1MKn/qVUG4wPE0nRHhyEB7Dt; cookie-consent=granted; Geo={%22region%22:%22TX%22%2C%22country%22:%22US%22%2C%22continent%22:%22NA%22}'}\n"\
         "   page = requests.get(url, headers=headers).text\n"\
         "   jsonPage = json.loads(page)\n"\
@@ -191,7 +185,7 @@ int webScrapeCharisma(string importedURL)
         "def mul(importedURL):\n"\
         "   import requests\n"\
         "   import json\n"\
-        "   url = importedURL + '?includeCustomItems=true'\n"\
+        "   url = 'https://character-service.dndbeyond.com/character/v5/character/' + importedURL + '/?includeCustomItems=true'\n"\
         "   headers = {'value': 'application/json, text/plain, */*','accept': 'application/json, text/plain, */*; q=0.01','cookie': '_gsid=f2607384476d4731b4b03e80181b9119; Login.RedirectUrl=https://www.dndbeyond.com/; LoginState=4cebf440-3603-466a-9734-300418d63949; AWSALBTG=nVWa1cEqQzb1Dk7H4sFhxK5fUVoUx8WaGK4o2OsLicknT+jitW1XfGGl9CHotEcweY6GpfCo0FOu6H/HhxV4VFFm4qixaCoEybIINmStbEb2sj4dW8gUo68CVYCjk/6m6iG4eSk1GEmgqX1F/5yrSigXxvZm442nW97sSr/D5HGM; AWSALBTGCORS=nVWa1cEqQzb1Dk7H4sFhxK5fUVoUx8WaGK4o2OsLicknT+jitW1XfGGl9CHotEcweY6GpfCo0FOu6H/HhxV4VFFm4qixaCoEybIINmStbEb2sj4dW8gUo68CVYCjk/6m6iG4eSk1GEmgqX1F/5yrSigXxvZm442nW97sSr/D5HGM; AWSALB=yaMzOFcfLAPH1ePr/xnP1jmje+RXLqrNYn0YwPViB1o0EXUjk46E0C3XcALb/MyGK9kBwTAELYI2Ams/DFulq+4BXt+lStWznHKK1MKn/qVUG4wPE0nRHhyEB7Dt; AWSALBCORS=yaMzOFcfLAPH1ePr/xnP1jmje+RXLqrNYn0YwPViB1o0EXUjk46E0C3XcALb/MyGK9kBwTAELYI2Ams/DFulq+4BXt+lStWznHKK1MKn/qVUG4wPE0nRHhyEB7Dt; cookie-consent=granted; Geo={%22region%22:%22TX%22%2C%22country%22:%22US%22%2C%22continent%22:%22NA%22}'}\n"\
         "   page = requests.get(url, headers=headers).text\n"\
         "   jsonPage = json.loads(page)\n"\
@@ -226,7 +220,7 @@ std::string webScrapeName(string importedURL)
         "   print('getting name')\n"
         "   import requests\n"\
         "   import json\n"\
-        "   url = importedURL + '?includeCustomItems=true'\n"\
+        "   url = 'https://character-service.dndbeyond.com/character/v5/character/' + importedURL + '/?includeCustomItems=true'\n"\
         "   headers = {'value': 'application/json, text/plain, */*','accept': 'application/json, text/plain, */*; q=0.01','cookie': '_gsid=f2607384476d4731b4b03e80181b9119; Login.RedirectUrl=https://www.dndbeyond.com/; LoginState=4cebf440-3603-466a-9734-300418d63949; AWSALBTG=nVWa1cEqQzb1Dk7H4sFhxK5fUVoUx8WaGK4o2OsLicknT+jitW1XfGGl9CHotEcweY6GpfCo0FOu6H/HhxV4VFFm4qixaCoEybIINmStbEb2sj4dW8gUo68CVYCjk/6m6iG4eSk1GEmgqX1F/5yrSigXxvZm442nW97sSr/D5HGM; AWSALBTGCORS=nVWa1cEqQzb1Dk7H4sFhxK5fUVoUx8WaGK4o2OsLicknT+jitW1XfGGl9CHotEcweY6GpfCo0FOu6H/HhxV4VFFm4qixaCoEybIINmStbEb2sj4dW8gUo68CVYCjk/6m6iG4eSk1GEmgqX1F/5yrSigXxvZm442nW97sSr/D5HGM; AWSALB=yaMzOFcfLAPH1ePr/xnP1jmje+RXLqrNYn0YwPViB1o0EXUjk46E0C3XcALb/MyGK9kBwTAELYI2Ams/DFulq+4BXt+lStWznHKK1MKn/qVUG4wPE0nRHhyEB7Dt; AWSALBCORS=yaMzOFcfLAPH1ePr/xnP1jmje+RXLqrNYn0YwPViB1o0EXUjk46E0C3XcALb/MyGK9kBwTAELYI2Ams/DFulq+4BXt+lStWznHKK1MKn/qVUG4wPE0nRHhyEB7Dt; cookie-consent=granted; Geo={%22region%22:%22TX%22%2C%22country%22:%22US%22%2C%22continent%22:%22NA%22}'}\n"\
         "   page = requests.get(url, headers=headers).text\n"\
         "   jsonPage = json.loads(page)\n"\
@@ -237,7 +231,9 @@ std::string webScrapeName(string importedURL)
 
     PyObject* func = PyObject_GetAttrString(moduleMain, "mul");
     PyObject* result = PyObject_CallFunction(func, "s", importedURL.c_str());
-    string name = (string)_PyUnicode_AsString(result);
+    std::string name;
+
+    name = (string)_PyUnicode_AsString(result);
 
     if (Py_FinalizeEx() < 0) {
         exit(120);
