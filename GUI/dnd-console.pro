@@ -7,9 +7,9 @@ CONFIG += c++17
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
-INCLUDEPATH += "C:\Program Files\Python310\include"
-DEPENDPATH += "C:\Program Files\Python310\libs"
-LIBS += -L "C:\Program Files\Python310\libs" -l"Python310"
+INCLUDEPATH += "C:\..\Python310\include"
+DEPENDPATH += "C:\..\Python310\libs"
+LIBS += -L "C:\..\Python310\libs" -l"Python310"
 
 SOURCES += \
     main.cpp \
