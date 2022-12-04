@@ -1,7 +1,6 @@
 #include "widget.h"
 #include "skillcheck.h"
 #include "player.h"
-#include "initiative.h"
 #include "./ui_widget.h"
 #include <QDebug>
 #include <QString>
@@ -197,13 +196,182 @@ void Widget::on_pushButton_clicked(bool checked)
 */
 
 //add player
-void Widget::on_addPlayerButton_clicked(bool checked)
+void Widget::on_addPlayer_clicked()
 {
     QString url;
-    url = ui->addPlayerLineEdit->text();
+    url = ui->playerURL->text();
 
     //add player to players vector
-    addPlayer(url.toStdString(),&players);
+
+    bool notEntered = true;
+    //checks if url is null or not
+    if(url != ""){
+        //checks if url is already entered
+        for(auto it = players.begin(); it != players.end(); ++it){
+            if(it->url == url.toStdString()){
+                    notEntered = false;
+            }
+        }
+        if(notEntered == true){
+            addPlayer(url.toStdString(),&players);
+            for(auto it = players.begin(); it != players.end(); ++it){
+                if(it->url == url.toStdString()){
+                        ui->playerList->addItem(QString::fromStdString(it->name));
+                }
+            }
+
+        }
+    }
+    ui->playerURL->clear();
+
+}
+
+
+
+
+
+//Delete Player from display and from vector<struct>
+void Widget::on_delPlayer_clicked()
+{
+    //get selected string from player list widget as QString
+    QString str;
+    QModelIndex index = ui->playerList->currentIndex();
+    str = index.data(Qt::DisplayRole).toString();
+
+    //searches selected name and deletes element in vector by value, deletes, reduces size
+    for(auto it = players.begin(); it!= players.end(); ++it)
+    {
+        if(it->name == str.toStdString())
+        {
+            removePlayer(str.toStdString(),&players);
+            break;
+        }
+    }
+
+    //deletes highlighted item from playerList widget
+    qDeleteAll(ui->playerList->selectedItems());
+}
+//Add player's STR
+void Widget::on_SkillCheck_STR_toggled(bool checked)
+{
+    //clear buffer
+    check.selectedSkill = "";
+
+    if(checked == true)
+    {
+        check.selectedSkill = "STR";
+    }
+    else
+    {
+        check.selectedSkill = "";
+    }
+}
+
+//Add player's DEX
+void Widget::on_SkillCheck_DEX_toggled(bool checked)
+{
+    //clear buffer
+    check.selectedSkill = "";
+
+    if(checked == true)
+    {
+        check.selectedSkill = "DEX";
+    }
+    else
+    {
+        check.selectedSkill = "";
+    }
+}
+
+
+//Add player's INT
+void Widget::on_SkillCheck_INT_toggled(bool checked)
+{
+    //clear buffer
+    check.selectedSkill = "";
+
+    if(checked == true)
+    {
+        check.selectedSkill = "INT";
+    }
+    else
+    {
+        check.selectedSkill = "";
+    }
+}
+
+//Add player's WIS
+void Widget::on_SkillCheck_WIS_toggled(bool checked)
+{
+    //clear buffer
+    check.selectedSkill = "";
+
+    if(checked == true)
+    {
+        check.selectedSkill = "WIS";
+    }
+    else
+    {
+        check.selectedSkill = "";
+    }
+}
+//Add player's CHA
+void Widget::on_SkillCheck_CHA_toggled(bool checked)
+{
+    //clear buffer
+    check.selectedSkill = "";
+
+    if(checked == true)
+    {
+        check.selectedSkill = "CHA";
+    }
+    else
+    {
+        check.selectedSkill = "";
+    }
+}
+
+//competitor advantage positive
+void Widget::on_cAdvantage_positive_toggled(bool checked)
+{
+    check.c_AdvScore = 0; //clear 'buffer'
+
+    if(checked == true)
+    {
+        check.c_AdvScore += check.ProcessAd(1);
+    }
+}
+
+
+//competitor advantage neutral
+void Widget::on_cAdvantage_neutral_toggled(bool checked)
+{
+    check.c_AdvScore = 0; //clear 'buffer'
+
+    if(checked == true)
+    {
+        check.c_AdvScore += check.ProcessAd(0);
+    }
+}
+
+//competitor advantage negative
+void Widget::on_cAdvantage_negative_toggled(bool checked)
+{
+    check.c_AdvScore = 0; //clear 'buffer'
+
+    if(checked == true)
+    {
+        check.c_AdvScore += check.ProcessAd(-1);
+    }
+}
+
+//competitor proficiency
+void Widget::on_SkillCheck_cProfBonus_valueChanged(int arg1)
+{
+    //clear 'buffer'
+    check.c_profBonus = 0;
+    //apply new value
+    check.c_profBonus += arg1;
 }
 
 

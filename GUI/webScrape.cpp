@@ -232,9 +232,9 @@ std::string webScrapeName(string importedURL)
     PyObject* func = PyObject_GetAttrString(moduleMain, "mul");
     PyObject* result = PyObject_CallFunction(func, "s", importedURL.c_str());
     std::string name;
-
-    name = (string)_PyUnicode_AsString(result);
-
+    if(result != NULL){
+        name = (string)_PyUnicode_AsString(result);
+    }
     if (Py_FinalizeEx() < 0) {
         exit(120);
     }

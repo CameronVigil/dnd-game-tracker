@@ -32,7 +32,7 @@ void SortOrder(std::vector<Player> *players)
 {
     //copy p[n].initiative to a temporary array
     int tempArr[players->size()];
-    std:string combatOrder[players->size()];
+    string combatOrder[players->size()];
     int i = 0;
     //assign Name to order of combat (unsorted)
 

@@ -22,10 +22,11 @@ class Player
         int getInitiative();
         void assignInitiative(int init);
         void resetInitiative();
-        void removePlayer(std::string name, std::vector<Player> *players);
 
 };
 void addPlayer(std::string url, std::vector<Player> *players);
+void removePlayer(std::string name, std::vector<Player> *players);
+
 
 
 #endif // PLAYER_H
