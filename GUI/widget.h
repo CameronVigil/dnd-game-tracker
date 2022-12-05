@@ -55,17 +55,13 @@ private slots:
 
     void on_Contest_Single_toggled(bool checked);
 
-    //void on_initRoll_clicked();
+    void on_initRoll_clicked();
 
-    //void on_listWidget_itemClicked(QListWidgetItem *item);
+    void on_listWidget_itemClicked(QListWidgetItem *item);
 
-    //void on_SkillCheck_Clear_clicked();
+    void on_SkillCheck_Clear_clicked();
 
-    //void on_SkillCheck_ProfBonus_valueChanged(int arg1);
-
-
-
-    //void on_addPlayerButton_clicked(bool checked);
+    void on_SkillCheck_ProfBonus_valueChanged(int arg1);
 
 
     void on_delPlayer_clicked();
@@ -80,7 +76,7 @@ private slots:
 
     void on_SkillCheck_CHA_toggled(bool checked);
 
-    //void on_Contest_Duel_toggled(bool checked);
+    void on_Contest_Duel_toggled(bool checked);
 
     void on_cAdvantage_positive_toggled(bool checked);
 
@@ -92,6 +88,7 @@ private slots:
 
 
     void on_addPlayer_clicked();
+
 
 private:
     Ui::Widget *ui;

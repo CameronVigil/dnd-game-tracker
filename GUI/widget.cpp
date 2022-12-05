@@ -1,5 +1,6 @@
 #include "widget.h"
 #include "skillcheck.h"
+#include "initiative.h"
 #include "player.h"
 #include "./ui_widget.h"
 #include <QDebug>
@@ -161,9 +162,17 @@ void Widget::on_Contest_Single_toggled(bool checked)
         check.contest = true;
     }
 }
-/*
+void Widget::on_Contest_Duel_toggled(bool checked)
+{
+    check.contest = 0;
+    if(checked == 1)
+    {
+        check.contest = 1;
+    }
+}
+
 //Roll for initiative list
-void Widget::on_pushButton_clicked(bool checked)
+void Widget::on_initRoll_clicked()
 {
     //Clears (but doesn't delete) names from the display list
     while(ui->listWidget->count()>0)
@@ -193,7 +202,7 @@ void Widget::on_pushButton_clicked(bool checked)
     //Reset Initiative for next button press
     resetAllInitiatives(&players);
 }
-*/
+
 
 //add player
 void Widget::on_addPlayer_clicked()
@@ -251,6 +260,100 @@ void Widget::on_delPlayer_clicked()
     //deletes highlighted item from playerList widget
     qDeleteAll(ui->playerList->selectedItems());
 }
+
+
+
+//+proficiency Bonus
+void Widget::on_SkillCheck_ProfBonus_valueChanged(int arg1)
+{
+    //clear 'buffer'
+    check.profBonus = 0;
+    //apply new value
+    check.profBonus += arg1;
+}
+
+//clear all choices for a re-roll
+void Widget::on_SkillCheck_Clear_clicked()
+{
+    QButtonGroup* TD = new QButtonGroup;    //Group of buttons for Task Difficulty
+    QButtonGroup* CT = new QButtonGroup;    //Group of buttons for Contest (single/duel)
+    QButtonGroup* AD = new QButtonGroup;    //Group of buttons for player Advantage-disadvantage
+    QButtonGroup* SK = new QButtonGroup;    //Group of buttons for Skill being checked
+    QButtonGroup* c_AD = new QButtonGroup;  //Group of buttonsfor player Advantage-disadvantage
+
+    //Task Difficulty
+    TD->addButton(ui->TaskDifficulty_Easy);
+    TD->addButton(ui->TaskDifficulty_vEasy);
+    TD->addButton(ui->TaskDifficulty_Medium);
+    TD->addButton(ui->TaskDifficulty_Hard);
+    TD->addButton(ui->TaskDifficulty_vHard);
+    TD->addButton(ui->TaskDifficulty_Extreme);
+    QAbstractButton* checked = TD->checkedButton();
+    if(checked)
+    {
+        TD->setExclusive(false);
+        checked->setChecked(false);
+        TD->setExclusive(true);
+    }
+
+    //Skill Being Checked
+    SK->addButton(ui->SkillCheck_CHA);
+    SK->addButton(ui->SkillCheck_DEX);
+    SK->addButton(ui->SkillCheck_INT);
+    SK->addButton(ui->SkillCheck_STR);
+    SK->addButton(ui->SkillCheck_WIS);
+
+    QAbstractButton* checked2 = SK->checkedButton();
+    if(checked2)
+    {
+        SK->setExclusive(false);
+        checked2->setChecked(false);
+        SK->setExclusive(true);
+    }
+
+    //Contest
+    CT->addButton(ui->Contest_Single);
+    CT->addButton(ui->Contest_Duel);
+    QAbstractButton* checked3 = CT->checkedButton();
+    if(checked3)
+    {
+        CT->setExclusive(false);
+        checked3->setChecked(false);
+        CT->setExclusive(true);
+    }
+
+    //Player Advantage-Disadvantage
+    AD->addButton(ui->Advantage_positive);
+    AD->addButton(ui->Advantage_negative);
+    AD->addButton(ui->Advantage_neutral);
+    QAbstractButton* checked4 = AD->checkedButton();
+    if(checked4)
+    {
+        AD->setExclusive(false);
+        checked4->setChecked(false);
+        AD->setExclusive(true);
+    }
+
+    //Enemy Advantage-Disadvantage
+    c_AD->addButton(ui->cAdvantage_positive);
+    c_AD->addButton(ui->cAdvantage_negative);
+    c_AD->addButton(ui->cAdvantage_neutral);
+    QAbstractButton* checked5 = c_AD->checkedButton();
+    if(checked5)
+    {
+        c_AD->setExclusive(false);
+        checked5->setChecked(false);
+        c_AD->setExclusive(true);
+    }
+
+    //Proficiency Bonus
+    ui->SkillCheck_ProfBonus->setValue(0);  //set value to 0;
+    ui->SkillCheck_cProfBonus->setValue(0);
+
+
+}
+
+
 //Add player's STR
 void Widget::on_SkillCheck_STR_toggled(bool checked)
 {
@@ -374,4 +477,16 @@ void Widget::on_SkillCheck_cProfBonus_valueChanged(int arg1)
     check.c_profBonus += arg1;
 }
 
+//Display selected player for skill check
+void Widget::on_listWidget_itemClicked(QListWidgetItem *item)
+{
+    //clear buffer between clicks
+    while(ui->listWidget2->count()>0)
+    {
+        ui->listWidget2->takeItem(0);
+    }
+
+    //display item
+    ui->listWidget2->addItem(item->text());
+}
 
