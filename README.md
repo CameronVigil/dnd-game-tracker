@@ -86,3 +86,6 @@ Attendees - all
 Report - Discussed deliverable 2, finalized functionality for the program.
 Will begin constructing the program.
 
+Deliverable 4 Meeting - 12/3/2022
+Attendees - all
+Report - Discussed implementation of changes to the requirements.  Worked on 4th deliverable.
