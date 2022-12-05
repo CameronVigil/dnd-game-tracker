@@ -10,7 +10,8 @@ CONFIG += c++17
 INCLUDEPATH += "..\Python310\include"
 DEPENDPATH += "..\Python310\libs"
 LIBS += -L "..\Python310\libs" -l"Python310"
-
+RESOURCES     = resources.qrc \
+    resources.qrc
 SOURCES += \
     main.cpp \
     dice.cpp \
