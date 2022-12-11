@@ -1,0 +1,15 @@
+# ninja log v5
+4	673	6912125140256074	build.ninja	ec019990e264c44d
+13	297	6912099563178727	untitled_autogen/timestamp	88591d5ea853780f
+901	3835	6912098722731174	CMakeFiles/untitled.dir/dice.cpp.obj	fba47e9311c4c411
+13	297	6912099563178727	untitled_autogen/mocs_compilation.cpp	88591d5ea853780f
+13	297	6912099563178727	C:/Users/camer/OneDrive - UNT System/Documents/School/Software Engineering/dnd-game-tracker/build-GUI-Desktop_Qt_6_4_1_MinGW_64_bit-Release/untitled_autogen/timestamp	88591d5ea853780f
+13	297	6912099563178727	C:/Users/camer/OneDrive - UNT System/Documents/School/Software Engineering/dnd-game-tracker/build-GUI-Desktop_Qt_6_4_1_MinGW_64_bit-Release/untitled_autogen/mocs_compilation.cpp	88591d5ea853780f
+881	2262	6912098706979959	CMakeFiles/untitled.dir/webScrape.cpp.obj	bbc64fa1ecec5e95
+905	2653	6912098710902277	CMakeFiles/untitled.dir/player.cpp.obj	1a77d3bf391c638b
+897	3779	6912098722176958	CMakeFiles/untitled.dir/skillcheck.cpp.obj	85797c606025e3cd
+313	2425	6912099584452738	CMakeFiles/untitled.dir/initiative.cpp.obj	207cd435d1a6a3c2
+886	3945	6912098723837133	CMakeFiles/untitled.dir/main.cpp.obj	8d8a5afa1ddbe2cc
+883	3926	6912098723631020	CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.obj	f1da92ff5767b22b
+310	3488	6912099595072267	CMakeFiles/untitled.dir/widget.cpp.obj	36889f57c3f5b40e
+3488	3748	6912099597628324	untitled.exe	ad9ebf5e2da65ba9

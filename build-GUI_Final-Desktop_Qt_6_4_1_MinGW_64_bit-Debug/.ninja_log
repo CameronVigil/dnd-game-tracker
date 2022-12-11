@@ -1,0 +1,12 @@
+# ninja log v5
+3	2231	6913150197467299	untitled_autogen/timestamp	159cd90c80bb5d7f
+3	2231	6913150197467299	untitled_autogen/mocs_compilation.cpp	159cd90c80bb5d7f
+3	2231	6913150197467299	C:/Users/camer/OneDrive - UNT System/Documents/School/Software Engineering/dnd-game-tracker/build-GUI_Final-Desktop_Qt_6_4_1_MinGW_64_bit-Debug/untitled_autogen/timestamp	159cd90c80bb5d7f
+3	2231	6913150197467299	C:/Users/camer/OneDrive - UNT System/Documents/School/Software Engineering/dnd-game-tracker/build-GUI_Final-Desktop_Qt_6_4_1_MinGW_64_bit-Debug/untitled_autogen/mocs_compilation.cpp	159cd90c80bb5d7f
+2254	6542	6913150246317890	CMakeFiles/untitled.dir/dice.cpp.obj	352468b979cbb22f
+2243	6615	6913150247047529	CMakeFiles/untitled.dir/skillcheck.cpp.obj	407c946d001c3965
+2260	6763	6913150248517820	CMakeFiles/untitled.dir/initiative.cpp.obj	433168a3e8cbc81b
+2249	7412	6913150255020178	CMakeFiles/untitled.dir/main.cpp.obj	15a87480df19a25f
+2232	7520	6913150256088839	CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.obj	1388b12f673eb7ec
+2238	8335	6913150264242950	CMakeFiles/untitled.dir/widget.cpp.obj	753cbdb84a86c046
+8336	8947	6913150270287149	untitled.exe	5e8b32fc375a3570

@@ -1,0 +1,538 @@
+/********************************************************************************
+** Form generated from reading UI file 'widget.ui'
+**
+** Created by: Qt User Interface Compiler version 6.4.1
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
+
+#ifndef UI_WIDGET_H
+#define UI_WIDGET_H
+
+#include <QtCore/QVariant>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QGroupBox>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QListWidget>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QRadioButton>
+#include <QtWidgets/QSpinBox>
+#include <QtWidgets/QWidget>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_Widget
+{
+public:
+    QPushButton *AbilityCheck_Result;
+    QGroupBox *groupBox;
+    QRadioButton *TaskDifficulty_vEasy;
+    QRadioButton *TaskDifficulty_Easy;
+    QRadioButton *TaskDifficulty_Medium;
+    QRadioButton *TaskDifficulty_Hard;
+    QRadioButton *TaskDifficulty_vHard;
+    QRadioButton *TaskDifficulty_Extreme;
+    QGroupBox *groupBox_2;
+    QRadioButton *Advantage_positive;
+    QRadioButton *Advantage_neutral;
+    QRadioButton *Advantage_negative;
+    QGroupBox *groupBox_3;
+    QRadioButton *Contest_Single;
+    QRadioButton *Contest_Duel;
+    QGroupBox *groupBox_4;
+    QRadioButton *SkillCheck_STR;
+    QRadioButton *SkillCheck_DEX;
+    QRadioButton *SkillCheck_INT;
+    QRadioButton *SkillCheck_WIS;
+    QRadioButton *SkillCheck_CHA;
+    QLabel *label;
+    QPushButton *initRoll;
+    QGroupBox *groupBox_5;
+    QListWidget *listWidget;
+    QLabel *label_2;
+    QListWidget *listWidget2;
+    QPushButton *SkillCheck_Clear;
+    QPushButton *addPlayer;
+    QPushButton *delPlayer;
+    QGroupBox *groupBox_6;
+    QSpinBox *SkillCheck_ProfBonus;
+    QListWidget *playerList;
+    QLineEdit *playerURL;
+    QLabel *label_3;
+    QListWidget *compList;
+    QSpinBox *SkillCheck_cProfBonus;
+    QGroupBox *groupBox_7;
+    QRadioButton *cAdvantage_positive;
+    QRadioButton *cAdvantage_neutral;
+    QRadioButton *cAdvantage_negative;
+    QLabel *label_4;
+
+    void setupUi(QWidget *Widget)
+    {
+        if (Widget->objectName().isEmpty())
+            Widget->setObjectName("Widget");
+        Widget->resize(411, 637);
+        QPalette palette;
+        QBrush brush(QColor(255, 255, 255, 255));
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        palette.setBrush(QPalette::Active, QPalette::Text, brush);
+        palette.setBrush(QPalette::Active, QPalette::ButtonText, brush);
+        QBrush brush1(QColor(58, 0, 0, 255));
+        brush1.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Active, QPalette::ToolTipText, brush);
+        QBrush brush2(QColor(203, 203, 203, 128));
+        brush2.setStyle(Qt::SolidPattern);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette::Active, QPalette::PlaceholderText, brush2);
+#endif
+        QBrush brush3(QColor(0, 0, 0, 255));
+        brush3.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Inactive, QPalette::WindowText, brush3);
+        palette.setBrush(QPalette::Inactive, QPalette::Text, brush3);
+        palette.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        QBrush brush4(QColor(240, 240, 240, 255));
+        brush4.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Inactive, QPalette::Window, brush4);
+        palette.setBrush(QPalette::Inactive, QPalette::ToolTipText, brush3);
+        QBrush brush5(QColor(0, 0, 0, 128));
+        brush5.setStyle(Qt::SolidPattern);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette::Inactive, QPalette::PlaceholderText, brush5);
+#endif
+        QBrush brush6(QColor(120, 120, 120, 255));
+        brush6.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Disabled, QPalette::WindowText, brush6);
+        palette.setBrush(QPalette::Disabled, QPalette::Text, brush6);
+        palette.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        palette.setBrush(QPalette::Disabled, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush3);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette::Disabled, QPalette::PlaceholderText, brush5);
+#endif
+        Widget->setPalette(palette);
+        QFont font;
+        font.setFamilies({QString::fromUtf8("Bahnschrift SemiBold SemiConden")});
+        font.setBold(true);
+        Widget->setFont(font);
+        Widget->setAutoFillBackground(true);
+        AbilityCheck_Result = new QPushButton(Widget);
+        AbilityCheck_Result->setObjectName("AbilityCheck_Result");
+        AbilityCheck_Result->setGeometry(QRect(310, 380, 80, 18));
+        QPalette palette1;
+        palette1.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette1.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette1.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        AbilityCheck_Result->setPalette(palette1);
+        QFont font1;
+        font1.setFamilies({QString::fromUtf8("Bahnschrift SemiBold SemiConden")});
+        font1.setPointSize(7);
+        font1.setBold(true);
+        AbilityCheck_Result->setFont(font1);
+        groupBox = new QGroupBox(Widget);
+        groupBox->setObjectName("groupBox");
+        groupBox->setGeometry(QRect(20, 300, 131, 161));
+        QPalette palette2;
+        palette2.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette2.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette2.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        groupBox->setPalette(palette2);
+        TaskDifficulty_vEasy = new QRadioButton(groupBox);
+        TaskDifficulty_vEasy->setObjectName("TaskDifficulty_vEasy");
+        TaskDifficulty_vEasy->setGeometry(QRect(0, 20, 69, 18));
+        QPalette palette3;
+        palette3.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette3.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette3.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        TaskDifficulty_vEasy->setPalette(palette3);
+        TaskDifficulty_Easy = new QRadioButton(groupBox);
+        TaskDifficulty_Easy->setObjectName("TaskDifficulty_Easy");
+        TaskDifficulty_Easy->setGeometry(QRect(0, 40, 69, 18));
+        QPalette palette4;
+        palette4.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette4.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette4.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        TaskDifficulty_Easy->setPalette(palette4);
+        TaskDifficulty_Medium = new QRadioButton(groupBox);
+        TaskDifficulty_Medium->setObjectName("TaskDifficulty_Medium");
+        TaskDifficulty_Medium->setGeometry(QRect(0, 60, 69, 18));
+        QPalette palette5;
+        palette5.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette5.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette5.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        TaskDifficulty_Medium->setPalette(palette5);
+        TaskDifficulty_Hard = new QRadioButton(groupBox);
+        TaskDifficulty_Hard->setObjectName("TaskDifficulty_Hard");
+        TaskDifficulty_Hard->setGeometry(QRect(0, 80, 69, 18));
+        QPalette palette6;
+        palette6.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette6.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette6.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        TaskDifficulty_Hard->setPalette(palette6);
+        TaskDifficulty_vHard = new QRadioButton(groupBox);
+        TaskDifficulty_vHard->setObjectName("TaskDifficulty_vHard");
+        TaskDifficulty_vHard->setGeometry(QRect(0, 100, 69, 18));
+        QPalette palette7;
+        palette7.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette7.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette7.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        TaskDifficulty_vHard->setPalette(palette7);
+        TaskDifficulty_Extreme = new QRadioButton(groupBox);
+        TaskDifficulty_Extreme->setObjectName("TaskDifficulty_Extreme");
+        TaskDifficulty_Extreme->setGeometry(QRect(0, 120, 69, 18));
+        QPalette palette8;
+        palette8.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette8.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette8.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        TaskDifficulty_Extreme->setPalette(palette8);
+        groupBox_2 = new QGroupBox(Widget);
+        groupBox_2->setObjectName("groupBox_2");
+        groupBox_2->setGeometry(QRect(160, 380, 61, 80));
+        QPalette palette9;
+        palette9.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette9.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette9.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        groupBox_2->setPalette(palette9);
+        Advantage_positive = new QRadioButton(groupBox_2);
+        Advantage_positive->setObjectName("Advantage_positive");
+        Advantage_positive->setGeometry(QRect(0, 20, 69, 18));
+        QPalette palette10;
+        palette10.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette10.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette10.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        Advantage_positive->setPalette(palette10);
+        Advantage_neutral = new QRadioButton(groupBox_2);
+        Advantage_neutral->setObjectName("Advantage_neutral");
+        Advantage_neutral->setGeometry(QRect(0, 40, 69, 18));
+        QPalette palette11;
+        palette11.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette11.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette11.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        Advantage_neutral->setPalette(palette11);
+        Advantage_negative = new QRadioButton(groupBox_2);
+        Advantage_negative->setObjectName("Advantage_negative");
+        Advantage_negative->setGeometry(QRect(0, 60, 69, 18));
+        QPalette palette12;
+        palette12.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette12.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette12.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        Advantage_negative->setPalette(palette12);
+        groupBox_3 = new QGroupBox(Widget);
+        groupBox_3->setObjectName("groupBox_3");
+        groupBox_3->setGeometry(QRect(20, 470, 71, 61));
+        QPalette palette13;
+        palette13.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette13.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette13.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        groupBox_3->setPalette(palette13);
+        Contest_Single = new QRadioButton(groupBox_3);
+        Contest_Single->setObjectName("Contest_Single");
+        Contest_Single->setGeometry(QRect(0, 20, 69, 18));
+        QPalette palette14;
+        palette14.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette14.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette14.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        Contest_Single->setPalette(palette14);
+        Contest_Duel = new QRadioButton(groupBox_3);
+        Contest_Duel->setObjectName("Contest_Duel");
+        Contest_Duel->setGeometry(QRect(0, 40, 69, 18));
+        QPalette palette15;
+        palette15.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette15.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette15.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        Contest_Duel->setPalette(palette15);
+        groupBox_4 = new QGroupBox(Widget);
+        groupBox_4->setObjectName("groupBox_4");
+        groupBox_4->setGeometry(QRect(160, 300, 141, 80));
+        QPalette palette16;
+        palette16.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette16.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette16.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        groupBox_4->setPalette(palette16);
+        SkillCheck_STR = new QRadioButton(groupBox_4);
+        SkillCheck_STR->setObjectName("SkillCheck_STR");
+        SkillCheck_STR->setGeometry(QRect(0, 20, 69, 18));
+        QPalette palette17;
+        palette17.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette17.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette17.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        SkillCheck_STR->setPalette(palette17);
+        SkillCheck_DEX = new QRadioButton(groupBox_4);
+        SkillCheck_DEX->setObjectName("SkillCheck_DEX");
+        SkillCheck_DEX->setGeometry(QRect(0, 40, 69, 18));
+        QPalette palette18;
+        palette18.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette18.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette18.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        SkillCheck_DEX->setPalette(palette18);
+        SkillCheck_INT = new QRadioButton(groupBox_4);
+        SkillCheck_INT->setObjectName("SkillCheck_INT");
+        SkillCheck_INT->setGeometry(QRect(0, 60, 69, 18));
+        QPalette palette19;
+        palette19.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette19.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette19.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        SkillCheck_INT->setPalette(palette19);
+        SkillCheck_WIS = new QRadioButton(groupBox_4);
+        SkillCheck_WIS->setObjectName("SkillCheck_WIS");
+        SkillCheck_WIS->setGeometry(QRect(70, 20, 69, 18));
+        QPalette palette20;
+        palette20.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette20.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette20.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        SkillCheck_WIS->setPalette(palette20);
+        SkillCheck_CHA = new QRadioButton(groupBox_4);
+        SkillCheck_CHA->setObjectName("SkillCheck_CHA");
+        SkillCheck_CHA->setGeometry(QRect(70, 40, 69, 18));
+        QPalette palette21;
+        palette21.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette21.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette21.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        SkillCheck_CHA->setPalette(palette21);
+        label = new QLabel(Widget);
+        label->setObjectName("label");
+        label->setGeometry(QRect(10, 270, 131, 21));
+        QPalette palette22;
+        palette22.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette22.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette22.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        label->setPalette(palette22);
+        initRoll = new QPushButton(Widget);
+        initRoll->setObjectName("initRoll");
+        initRoll->setGeometry(QRect(220, 150, 71, 20));
+        QPalette palette23;
+        palette23.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette23.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette23.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        initRoll->setPalette(palette23);
+        groupBox_5 = new QGroupBox(Widget);
+        groupBox_5->setObjectName("groupBox_5");
+        groupBox_5->setGeometry(QRect(220, 170, 71, 41));
+        QPalette palette24;
+        palette24.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette24.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette24.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        groupBox_5->setPalette(palette24);
+        groupBox_5->setFont(font1);
+        listWidget = new QListWidget(Widget);
+        listWidget->setObjectName("listWidget");
+        listWidget->setGeometry(QRect(300, 150, 81, 101));
+        QPalette palette25;
+        palette25.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette25.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette25.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        listWidget->setPalette(palette25);
+        listWidget->setStyleSheet(QString::fromUtf8("font: 7pt \"Segoe UI\";"));
+        label_2 = new QLabel(Widget);
+        label_2->setObjectName("label_2");
+        label_2->setGeometry(QRect(160, 130, 37, 12));
+        QPalette palette26;
+        palette26.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        QBrush brush7(QColor(255, 170, 255, 255));
+        brush7.setStyle(Qt::SolidPattern);
+        palette26.setBrush(QPalette::Active, QPalette::Window, brush7);
+        palette26.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette26.setBrush(QPalette::Inactive, QPalette::Window, brush4);
+        palette26.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        palette26.setBrush(QPalette::Disabled, QPalette::Window, brush7);
+        label_2->setPalette(palette26);
+        label_2->setFont(font1);
+        listWidget2 = new QListWidget(Widget);
+        listWidget2->setObjectName("listWidget2");
+        listWidget2->setGeometry(QRect(140, 270, 161, 31));
+        QPalette palette27;
+        palette27.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette27.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette27.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        listWidget2->setPalette(palette27);
+        SkillCheck_Clear = new QPushButton(Widget);
+        SkillCheck_Clear->setObjectName("SkillCheck_Clear");
+        SkillCheck_Clear->setGeometry(QRect(310, 400, 80, 18));
+        QPalette palette28;
+        palette28.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette28.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette28.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        SkillCheck_Clear->setPalette(palette28);
+        SkillCheck_Clear->setFont(font1);
+        addPlayer = new QPushButton(Widget);
+        addPlayer->setObjectName("addPlayer");
+        addPlayer->setGeometry(QRect(20, 150, 80, 18));
+        QPalette palette29;
+        palette29.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette29.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette29.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        addPlayer->setPalette(palette29);
+        addPlayer->setFont(font1);
+        delPlayer = new QPushButton(Widget);
+        delPlayer->setObjectName("delPlayer");
+        delPlayer->setGeometry(QRect(20, 190, 80, 18));
+        QPalette palette30;
+        palette30.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette30.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette30.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        delPlayer->setPalette(palette30);
+        delPlayer->setFont(font1);
+        groupBox_6 = new QGroupBox(Widget);
+        groupBox_6->setObjectName("groupBox_6");
+        groupBox_6->setGeometry(QRect(310, 300, 81, 81));
+        QPalette palette31;
+        palette31.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette31.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette31.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        groupBox_6->setPalette(palette31);
+        SkillCheck_ProfBonus = new QSpinBox(groupBox_6);
+        SkillCheck_ProfBonus->setObjectName("SkillCheck_ProfBonus");
+        SkillCheck_ProfBonus->setGeometry(QRect(10, 20, 61, 51));
+        QPalette palette32;
+        palette32.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette32.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette32.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        SkillCheck_ProfBonus->setPalette(palette32);
+        QFont font2;
+        font2.setFamilies({QString::fromUtf8("Bahnschrift SemiBold SemiConden")});
+        font2.setPointSize(12);
+        font2.setBold(true);
+        SkillCheck_ProfBonus->setFont(font2);
+        playerList = new QListWidget(Widget);
+        playerList->setObjectName("playerList");
+        playerList->setGeometry(QRect(130, 150, 81, 101));
+        QPalette palette33;
+        palette33.setBrush(QPalette::Active, QPalette::BrightText, brush3);
+        palette33.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette33.setBrush(QPalette::Active, QPalette::HighlightedText, brush3);
+        palette33.setBrush(QPalette::Inactive, QPalette::BrightText, brush);
+        palette33.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette33.setBrush(QPalette::Inactive, QPalette::HighlightedText, brush3);
+        palette33.setBrush(QPalette::Disabled, QPalette::BrightText, brush3);
+        palette33.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        palette33.setBrush(QPalette::Disabled, QPalette::HighlightedText, brush);
+        playerList->setPalette(palette33);
+        playerList->setFont(font1);
+        playerURL = new QLineEdit(Widget);
+        playerURL->setObjectName("playerURL");
+        playerURL->setGeometry(QRect(22, 170, 91, 20));
+        QPalette palette34;
+        palette34.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette34.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette34.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        playerURL->setPalette(palette34);
+        label_3 = new QLabel(Widget);
+        label_3->setObjectName("label_3");
+        label_3->setGeometry(QRect(320, 130, 51, 16));
+        QPalette palette35;
+        palette35.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette35.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette35.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        label_3->setPalette(palette35);
+        label_3->setFont(font1);
+        compList = new QListWidget(Widget);
+        compList->setObjectName("compList");
+        compList->setGeometry(QRect(100, 490, 101, 21));
+        QPalette palette36;
+        palette36.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette36.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette36.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        compList->setPalette(palette36);
+        compList->setFont(font1);
+        SkillCheck_cProfBonus = new QSpinBox(Widget);
+        SkillCheck_cProfBonus->setObjectName("SkillCheck_cProfBonus");
+        SkillCheck_cProfBonus->setGeometry(QRect(170, 520, 61, 51));
+        QPalette palette37;
+        palette37.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette37.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette37.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        SkillCheck_cProfBonus->setPalette(palette37);
+        SkillCheck_cProfBonus->setFont(font2);
+        groupBox_7 = new QGroupBox(Widget);
+        groupBox_7->setObjectName("groupBox_7");
+        groupBox_7->setGeometry(QRect(100, 510, 61, 80));
+        QPalette palette38;
+        palette38.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette38.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette38.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        groupBox_7->setPalette(palette38);
+        cAdvantage_positive = new QRadioButton(groupBox_7);
+        cAdvantage_positive->setObjectName("cAdvantage_positive");
+        cAdvantage_positive->setGeometry(QRect(0, 20, 69, 18));
+        QPalette palette39;
+        palette39.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette39.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette39.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        cAdvantage_positive->setPalette(palette39);
+        cAdvantage_neutral = new QRadioButton(groupBox_7);
+        cAdvantage_neutral->setObjectName("cAdvantage_neutral");
+        cAdvantage_neutral->setGeometry(QRect(0, 40, 69, 18));
+        QPalette palette40;
+        palette40.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette40.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette40.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        cAdvantage_neutral->setPalette(palette40);
+        cAdvantage_negative = new QRadioButton(groupBox_7);
+        cAdvantage_negative->setObjectName("cAdvantage_negative");
+        cAdvantage_negative->setGeometry(QRect(0, 60, 69, 18));
+        QPalette palette41;
+        palette41.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette41.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette41.setBrush(QPalette::Disabled, QPalette::ButtonText, brush6);
+        cAdvantage_negative->setPalette(palette41);
+        label_4 = new QLabel(Widget);
+        label_4->setObjectName("label_4");
+        label_4->setGeometry(QRect(80, 0, 251, 91));
+        label_4->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/logo.jpg")));
+
+        retranslateUi(Widget);
+
+        QMetaObject::connectSlotsByName(Widget);
+    } // setupUi
+
+    void retranslateUi(QWidget *Widget)
+    {
+        Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
+        AbilityCheck_Result->setText(QCoreApplication::translate("Widget", "Result", nullptr));
+        groupBox->setTitle(QCoreApplication::translate("Widget", "Task Difficulty", nullptr));
+        TaskDifficulty_vEasy->setText(QCoreApplication::translate("Widget", "Very Easy", nullptr));
+        TaskDifficulty_Easy->setText(QCoreApplication::translate("Widget", "Easy", nullptr));
+        TaskDifficulty_Medium->setText(QCoreApplication::translate("Widget", "Medium", nullptr));
+        TaskDifficulty_Hard->setText(QCoreApplication::translate("Widget", "Hard", nullptr));
+        TaskDifficulty_vHard->setText(QCoreApplication::translate("Widget", "Very Hard", nullptr));
+        TaskDifficulty_Extreme->setText(QCoreApplication::translate("Widget", "Extreme", nullptr));
+        groupBox_2->setTitle(QCoreApplication::translate("Widget", "Adv", nullptr));
+        Advantage_positive->setText(QCoreApplication::translate("Widget", "+", nullptr));
+        Advantage_neutral->setText(QCoreApplication::translate("Widget", "0", nullptr));
+        Advantage_negative->setText(QCoreApplication::translate("Widget", "(-)", nullptr));
+        groupBox_3->setTitle(QCoreApplication::translate("Widget", "Contest", nullptr));
+        Contest_Single->setText(QCoreApplication::translate("Widget", "Single", nullptr));
+        Contest_Duel->setText(QCoreApplication::translate("Widget", "Duel", nullptr));
+        groupBox_4->setTitle(QCoreApplication::translate("Widget", "Skill Being Checked", nullptr));
+        SkillCheck_STR->setText(QCoreApplication::translate("Widget", "STR", nullptr));
+        SkillCheck_DEX->setText(QCoreApplication::translate("Widget", "DEX", nullptr));
+        SkillCheck_INT->setText(QCoreApplication::translate("Widget", "INT", nullptr));
+        SkillCheck_WIS->setText(QCoreApplication::translate("Widget", "WIS", nullptr));
+        SkillCheck_CHA->setText(QCoreApplication::translate("Widget", "CHA", nullptr));
+        label->setText(QCoreApplication::translate("Widget", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:700;\">Skill Check for</span></p></body></html>", nullptr));
+        initRoll->setText(QCoreApplication::translate("Widget", "Roll", nullptr));
+        groupBox_5->setTitle(QCoreApplication::translate("Widget", "Lock/Unlock", nullptr));
+        label_2->setText(QCoreApplication::translate("Widget", "Players", nullptr));
+        SkillCheck_Clear->setText(QCoreApplication::translate("Widget", "Clear", nullptr));
+        addPlayer->setText(QCoreApplication::translate("Widget", "Add Player/NPC", nullptr));
+        delPlayer->setText(QCoreApplication::translate("Widget", "Del Player/NPC", nullptr));
+        groupBox_6->setTitle(QCoreApplication::translate("Widget", "Proficiency", nullptr));
+        label_3->setText(QCoreApplication::translate("Widget", "Turn Order", nullptr));
+        groupBox_7->setTitle(QCoreApplication::translate("Widget", "Adv", nullptr));
+        cAdvantage_positive->setText(QCoreApplication::translate("Widget", "+", nullptr));
+        cAdvantage_neutral->setText(QCoreApplication::translate("Widget", "0", nullptr));
+        cAdvantage_negative->setText(QCoreApplication::translate("Widget", "(-)", nullptr));
+        label_4->setText(QString());
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class Widget: public Ui_Widget {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_WIDGET_H
