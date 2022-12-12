@@ -21,6 +21,7 @@ void Player::assignInitiative(int init){
 void addPlayer(std::string url, std::vector<Player> *players){
    Player player;
 
+   
    cout << "performing web scrape" << endl;
 
 
