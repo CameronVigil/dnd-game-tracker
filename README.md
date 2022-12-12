@@ -1,3 +1,19 @@
+
+
+
+
+https://user-images.githubusercontent.com/42782331/207139406-0b63c3a1-28d6-4217-a163-3dac1ae7c634.mov
+
+
+
+
+
+
+
+
+
+
+
 Project: Dungeons and Dragons Game Tracker
 Group Name: Rex Fatorem
 Group Members: Jared Edge (Group Leader), Cameron Vigil,  Jeremy Groce, Julian Mendoza
@@ -22,6 +38,8 @@ Streamline final product for convenience
 
 Bonus Milestones:
 Adding a UI or some form of graphics to the program to turn it from a barebones terminal program to something more fun to use during actual DnD.
+
+
 
 
 Directory Structure
@@ -89,3 +107,11 @@ Will begin constructing the program.
 Deliverable 4 Meeting - 12/3/2022
 Attendees - all
 Report - Discussed implementation of changes to the requirements.  Worked on 4th deliverable.
+
+
+
+
+
+
+
+
