@@ -23,7 +23,7 @@ void addPlayer(std::string url, std::vector<Player> *players){
    Check check;
    //cout << "performing web scrape" << endl;
 
-   /*
+   
    player.name = webScrapeName(url);
    player.strength = webScrapeStrength(url);
    player.dexterity = webScrapeDexterity(url);
@@ -31,7 +31,7 @@ void addPlayer(std::string url, std::vector<Player> *players){
    player.intelligence = webScrapeIntelligence(url);
    player.wisdom = webScrapeWisdom(url);
    player.url = url;
-   */
+   
 
    players->push_back(player);
    //cout << player.name << endl;
