@@ -324,33 +324,31 @@ void Widget::on_Contest_Duel_toggled(bool checked)
 void Widget::on_initRoll_clicked()
 {
     //Clears (but doesn't delete) names from the display list
-    while(ui->listWidget->count()>0)
+    /*while(ui->playerList->count()>0)
     {
-        ui->listWidget->takeItem(0);//handle the item if you don't
-                              //have a pointer to it elsewhere
+        ui->playerList->takeItem(0);//handle the item if you don't
+        ui->playerList->                      //have a pointer to it elsewhere
     }
     while(ui->compList->count()>0)
     {
-        ui->compList->takeItem(0);
-    }
-
-
+        ui->compList = ui->playerList;
+        ui->compList->clear();
+    }*/
+    ui->listWidget->clear();
+    ui->compList->clear();
     //Assign Initiative
-    AssignInit(&players);
-    int i = 0;
-    for(auto it = players.begin(); it != players.end(); ++it)
+    AssignInit(&players, combatOrder);
+    //sort order by initiative
+    for(int i = 0; i < combatOrder->size() ; ++i)
     {
+        if(combatOrder[i] == ""){ break;}
+            //convert std string to QString to then be sent to the widget
+            string order = combatOrder[i];
+            QString str = QString::fromLocal8Bit(order.c_str());
+            //Add the QString to widget's display
 
-        //convert std string to QString to then be sent to the widget
-        string order = combatOrder[i];
-        QString str = QString::fromLocal8Bit(order.c_str());
-        //Add the QString to widget's display
-        ui->listWidget->addItem(str);
-        ui->compList->addItem(str);
-
-
-        //qDebug() << it->getInitiative();
-        i++;
+            ui->listWidget->addItem(QString::fromStdString(combatOrder[i]));
+            ui->compList->addItem(QString::fromStdString(combatOrder[i]));
     }
 
     //Reset Initiative for next button press

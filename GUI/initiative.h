@@ -9,8 +9,8 @@ using namespace std;
 
 
 int getInit(string name,std::vector<Player> *players);
-void AssignInit(std::vector<Player> *players);
-void SortOrder(std::vector<Player> *players);
+void AssignInit(std::vector<Player> *players,std::string *combatOrder);
+void SortOrder(std::vector<Player> *players,std::string *combatOrder);
 void resetAllInitiatives(std::vector<Player> *players);
 
 

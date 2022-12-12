@@ -17,18 +17,18 @@ int getInit(string name, std::vector<Player> *players)
 }
 
 //Assigns Initiative to each player
-void AssignInit(std::vector<Player> *players)
+void AssignInit(std::vector<Player> *players,std::string *combatOrder)
 {
     //each player gets initiative value
     for(auto it = players->begin(); it != players->end(); ++it){
         it->assignInitiative(getInit(it->name, players));
     }
     //order is sorted in descending order
-    SortOrder(players);
+    SortOrder(players, combatOrder);
 }
 
 //Sort in descending order
-void SortOrder(std::vector<Player> *players)
+void SortOrder(std::vector<Player> *players,std::string *combatOrder)
 {
     //tie breaker rolls in case two players have same init
     int tb1 = 0;    //tie-breaker1 roll
@@ -36,7 +36,7 @@ void SortOrder(std::vector<Player> *players)
 
     //copy p[n].initiative to a temporary array
     int tempArr[players->size()];
-    string combatOrder[players->size()];
+    combatOrder[players->size()];
     int i = 0;
     //assign Name to order of combat (unsorted)
 
