@@ -50,17 +50,21 @@ Directory Structure
 	-.cpp files
 
 
+User Manual
 
-Install:
+Source code is located in the /GUI subdirectory. Demonstration video has been uploaded to GitHub.
 
-git clone https://github.com/Microsoft/vcpkg.git
-cd ..
-.\vcpkg\bootstrap-vcpkg.bat
-.\vcpkg install curl
-.\vcpkg install gumbo
+If there are issues running the program, (crashing during Add Player), check the .pro file for the include path for Python. The program must be configured to the locally installed Python. If you do not have Python, it must be downloaded. There must be two environment variables added to your system in order for it to find the Python directories.
 
-.\vcpkg integrate install
+Add these paths to your Path variable:
 
+C:\Users\camer\OneDrive - UNT System\Documents\School\Software Engineering\dnd-game-tracker\GUI\Python310
+
+C:\Users\camer\OneDrive - UNT System\Documents\School\Software Engineering\dnd-game-tracker\GUI\Python310\Scripts
+
+
+
+Run the dnd-console.exe file in /execution
 
 
 Meeting Minutes
